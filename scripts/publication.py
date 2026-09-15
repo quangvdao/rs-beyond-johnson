@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Explicit one-way PDF/reference import and public checksum verification."""
+"""Explicit one-way paper PDF import and public checksum verification."""
 import argparse
 import hashlib
 import json
 from pathlib import Path
-import re
 import shutil
 import subprocess
 
@@ -23,7 +22,7 @@ def published_files():
                            and (p.suffix in {'.bin', '.log', '.patch', '.txt', '.lock', '.toml'}
                                 or p.name == 'SHA256SUMS'))
                        or p.name == 'LICENSE' or p.name.startswith('LICENSE-')
-                       or p.name in {'Makefile', '.gitignore', PAPER + '.aux'}))
+                       or p.name in {'Makefile', '.gitignore'}))
 
 
 def hashes():
@@ -45,20 +44,8 @@ def main():
         pdf = source / (PAPER + '.pdf')
         if not pdf.read_bytes().startswith(b'%PDF-'):
             parser.error('source is not a PDF')
-        companion = (ROOT / 'certificates-and-obstructions.tex').read_text()
-        labels = set(re.findall(r'M-((?:thm|prop|lem|eq|sec):[\w-]+)', companion))
-        lines = (source / (PAPER + '.aux')).read_text().splitlines()
-        records = []
-        for label in sorted(labels):
-            selected = [line for line in lines if any(
-                line.startswith('\\newlabel{' + key + '}')
-                for key in (label, label + '@cref'))]
-            if not any(line.startswith('\\newlabel{' + label + '}') for line in selected):
-                parser.error(f'missing main-paper label: {label}')
-            records.extend(selected)
         shutil.copyfile(pdf, ROOT / pdf.name)
-        (ROOT / (PAPER + '.aux')).write_text('\n'.join(records) + '\n')
-        print('Imported main PDF and reference map only; review before committing.')
+        print('Imported main PDF only; review before committing.')
     elif args.operation == 'manifest':
         (ROOT / 'manifest.json').write_text(json.dumps(
             {'algorithm': 'sha256', 'files': hashes()}, indent=2) + '\n')

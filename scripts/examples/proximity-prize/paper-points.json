@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "n": 262144,
+    "k": 131072,
+    "base_prime": 2130706433,
+    "field_cardinality": 93571093019388561295270373781649880353786165192103559169,
+    "interleaving_width": 8,
+    "extractor_list_width": 16,
+    "queries": 128,
+    "exact_reduction_condition": "(E + Lambda) / q <= 2^-128"
+  },
+  "ordinary": {
+    "method": "ordinary Johnson certificate, legacy L=k transfer",
+    "A": 185372,
+    "support": [
+      4096,
+      5792
+    ],
+    "height": 22992660,
+    "exceptional_count_upper": 168519951717387772,
+    "interleaved_list_size_upper": 5792,
+    "reduction_numerator": 168519951717393564,
+    "reduction_budget": 274980728111395087,
+    "characteristic_guard": 0,
+    "conservative_spot_term": "(185372/262144)^128",
+    "certified_score_centibits": 6399,
+    "next_centibit_fails_for_this_spot_bound": true
+  },
+  "first_order": {
+    "method": "first-order squarefree sharp-v2, tight Taylor degree",
+    "A": 183210,
+    "support": [
+      26,
+      7,
+      36
+    ],
+    "height": 485,
+    "regular_threshold_L": 131851,
+    "exceptional_count_upper": 274498710692409102,
+    "interleaved_list_size_upper": 285674919,
+    "reduction_numerator": 274498710978084021,
+    "reduction_budget": 274980728111395087,
+    "characteristic_guard": 131071,
+    "conservative_spot_term": "(183210/262144)^128",
+    "certified_score_centibits": 6615,
+    "next_centibit_fails_for_this_spot_bound": true
+  },
+  "comparison": {
+    "agreement_positions_improved": 2162,
+    "certified_score_gain_centibits": 216,
+    "scope": "two replayable points; no global optimality claim"
+  }
+}

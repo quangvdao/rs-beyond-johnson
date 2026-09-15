@@ -1,5 +1,4 @@
 *.aux
-!rs-beyond-johnson.aux
 *.log
 !experiments/zisk-compressed-final/baseline-q54/program-setup.log
 !experiments/zisk-compressed-final/baseline-q54/prove.log

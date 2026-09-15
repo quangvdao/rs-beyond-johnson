@@ -34,6 +34,22 @@ Omitting `--compare-only` from the ProveKit or ZisK command regenerates its
 saved JSON report. Preserve the selected certificate inputs when reproducing
 published results; a new bounded search answers a different question.
 
+## Proximity Prize comparison
+
+The [benchmark guide](scripts/examples/proximity-prize/README.md) records the
+paper's attained ordinary-Johnson and first-order points, the declared search
+restrictions, and the September 15, 2026 submission-source concordance.
+
+```console
+python3 scripts/examples/proximity-prize/check_points.py
+```
+
+This independently replays the saved [paper points](scripts/examples/proximity-prize/paper-points.json)
+using exact arithmetic. It checks interpolation feasibility, list and MCA
+bounds, the reduction budget, characteristic conditions, and the score
+inequalities. These are paper calculations, not submitted prize entries or a
+fresh Lean verification of other submissions.
+
 ## Finite application values
 
 The application checkers explicitly select the tight first-order Taylor-degree
@@ -47,9 +63,9 @@ proof-size measurements below.
 | ZisK, 51 queries and 22 grinding bits | Batching error `4073087021134687044 / (2^64-2^32+1)^3` | Approximately 130.179 batching bits and 128.000336 query bits under the checker's independent-uniform-output model. |
 | LambdaVM CPU, 208 queries and 20 grinding bits | List bound `367473974837/3230`; ceiling `113769033` | Approximately 128.063 bits for the changed-component error bound. The field/hash accounting saves 55,992 bytes; serialization gives the separately measured 59,832 bytes. |
 
-The linked checker reports above retain exact arithmetic. The companion PDF
-focuses on mathematical refinements and obstructions; application reproduction
-and implementation details live here and in the experiment directories.
+The linked checker reports retain exact arithmetic. The paper contains the
+mathematical arguments; this guide and the experiment directories contain
+the reproduction instructions and implementation records.
 
 ## Measured sizes and their baselines
 
