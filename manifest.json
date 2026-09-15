@@ -38,7 +38,7 @@
     "experiments/zisk-compressed-final/revised-q51/verify-and-convert.log": "7f3bf2d17bb0cb4651ed3a320564e629a1819ec4b6135bf73160838427bff855",
     "experiments/zisk-compressed-final/truncate_fri_queries.rs": "853d2f733fd6f2e59d204da20d2654dcf6f3ae8de6389e053ba18f725320d3c1",
     "experiments/zisk-compressed-final/zisk-cargo.patch": "de6f2b308305970cdaf5aa602eb0ceb9327b88ace188f27248cfb4939f0682ab",
-    "rs-beyond-johnson.pdf": "cc537c7eafb1da7bd5f15357297b7a160e5a18e899c79a6c1fed89876540127b",
+    "rs-beyond-johnson.pdf": "bb2c1a14c349703bb3e5b97c244c9f135b3483eeb7ccf55250c6913b72bb8c4c",
     "scripts/baselines/beyond-johnson-powers.json": "10b677b7c6a706f041fc17941dc950f242bce9ac53cedb6b9bdfc6acd952b9ef",
     "scripts/baselines/combination-protocol-half-rate.json": "08d63417656269006f33f60718ce3b546706c8bc6530f3a94a0b45bb5a7c39d6",
     "scripts/baselines/combination-protocol-quarter-rate.json": "b632b10328e225aa0a01b0d6cabd20510c1ed3d8d61ff21181c843933b007abf",
