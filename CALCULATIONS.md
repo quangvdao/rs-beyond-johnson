@@ -34,6 +34,23 @@ Omitting `--compare-only` from the ProveKit or ZisK command regenerates its
 saved JSON report. Preserve the selected certificate inputs when reproducing
 published results; a new bounded search answers a different question.
 
+## Finite application values
+
+The application checkers explicitly select the tight first-order Taylor-degree
+model. The engine's default remains the historical model so that saved baselines
+remain reproducible. These are certificate calculations, separate from the
+proof-size measurements below.
+
+| System | Certificate value | Interpretation |
+|---|---|---|
+| ProveKit lookup, second code `(n,k,A)=(2048,128,453)` | List bound `2659384185/326`; integer floor `8157620` | One out-of-domain evaluation gives approximately 137.082 separation bits. The saved generic ceiling is `8157621`; the successive-stage ceiling is `93954343`, giving approximately 130.030 bits. |
+| ZisK, 51 queries and 22 grinding bits | Batching error `4073087021134687044 / (2^64-2^32+1)^3` | Approximately 130.179 batching bits and 128.000336 query bits under the checker's independent-uniform-output model. |
+| LambdaVM CPU, 208 queries and 20 grinding bits | List bound `367473974837/3230`; ceiling `113769033` | Approximately 128.063 bits for the changed-component error bound. The field/hash accounting saves 55,992 bytes; serialization gives the separately measured 59,832 bytes. |
+
+The linked checker reports above retain exact arithmetic. The companion PDF
+focuses on mathematical refinements and obstructions; application reproduction
+and implementation details live here and in the experiment directories.
+
 ## Measured sizes and their baselines
 
 - **ProveKit passport and lookup proofs:** the main paper's measurement table

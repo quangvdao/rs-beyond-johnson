@@ -67,8 +67,8 @@ python3 scripts/check_lambda_measurements.py
 
 See the [LambdaVM experiment](experiments/lambdavm-anchors/README.md) for the
 32,768-instruction workload, experimental fork, and measured overhead.
-The companion includes these measurements as a supplement to the
-main paper's application analysis.
+The experiment documentation gives the measurement details accompanying
+the main paper's application analysis.
 
 The scripts are research artifacts, not production decoders.
 The [calculation guide](CALCULATIONS.md) maps the principal tables and

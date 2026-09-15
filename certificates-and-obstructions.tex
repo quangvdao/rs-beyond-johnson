@@ -23,10 +23,7 @@
 \usepackage[nameinlink,capitalize,noabbrev]{cleveref}
 
 \hypersetup{
-  pdftitle={Reed--Solomon Codes Beyond Johnson: Efficient Decoding and Smaller Cryptographic Proofs},
   pdfauthor={Quang Dao, Scott Duke Kominers, and Justin Thaler},
-  pdfsubject={Reed--Solomon list decoding and mutual correlated agreement via hidden Hasse derivatives},
-  pdfkeywords={Reed--Solomon codes, list decoding, correlated agreement, Hasse derivatives, interpolation},
   colorlinks=true,
   linkcolor=blue!55!black,
   citecolor=blue!55!black,
@@ -81,8 +78,6 @@
 \newcommand{\Brecon}{B_{\mathrm{rec}}}
 \newcommand{\IntMargin}{\mathsf{Margin}_{\mathrm{int}}}
 
-\title{\bfseries Reed--Solomon Codes Beyond Johnson:\\
-Efficient Decoding and Smaller Cryptographic Proofs}
 \author{
   Quang Dao\thanks{Carnegie Mellon University. \texttt{qvd@andrew.cmu.edu}.}
   \and
@@ -104,96 +99,65 @@ Certificates, Refinements, and Obstructions}
 \begin{document}
 \maketitle
 \begin{abstract}
-Hidden-derivative interpolation for Reed--Solomon codes raises quantitative
-questions beyond the existence of an all-rate decoder: how to compute
-finite certificates, how characteristic affects coefficient lifting, and
-how large agreement lists can be near capacity.
-This companion collects exact rank formulas, differential-root refinements,
-and combinatorial constructions addressing these questions.
-We give finite block decompositions of the local interpolation map,
-fixed-parameter certificates of orders zero and one, and a fixed-gap
-boundary asymptotic for a one-sided support.
-We also analyze descent to the data field, resonant Taylor coefficients,
-and randomized regular witnesses.
-Coefficient fibers and multiplicative cosets give large agreement lists,
-while a Frobenius-plane construction obstructs enumeration from higher-derivative-supported equations
-in fixed characteristic.
-The all-rate decoding theorem and the geometric list-size and correlated
-agreement results are developed in the separate main paper.
- \end{abstract}
+This companion studies three questions about hidden-derivative interpolation
+for Reed--Solomon codes: how many independent constraints its local map
+imposes, how to enumerate differential roots when the characteristic limits
+Taylor reconstruction, and how large agreement lists can become as the gap
+from capacity shrinks. We give exact rank formulas and finite certificates,
+root-enumeration bounds using field descent and resonant coefficients, and
+list-size constructions for arbitrary evaluation sets. A separate obstruction
+shows why equations supported only on higher derivatives can have too many
+roots in small characteristic. The main paper develops the decoding and
+correlated-agreement bounds; here we examine the alternative supports and
+limitations that complement those results.
+\end{abstract}
 \section{Introduction}
 \label{sec:companion-introduction}
 
-Our main paper, \emph{Reed--Solomon Codes Beyond Johnson: Efficient Decoding
-and Smaller Cryptographic Proofs}, develops explicit
-list-decoding and agreement bounds from ordinary and hidden-derivative
-interpolation, together with a deterministic decoder.
-This companion collects the auxiliary results that support further study
-of the method. Its purpose is to retain the finite formulas, alternative
-root arguments, and obstructions without reproducing the main decoding theorem or
-assembling its proof. The two manuscripts have separate introductions and result
-statements, and share basic definitions and the differential-root core.
+An interpolation polynomial can certify that every close message solves a
+differential equation without providing a useful way to enumerate all its
+solutions. Nor does an asymptotic interpolation bound tell us the exact rank
+of a finite constraint system. These distinctions motivate this companion
+to \emph{Reed--Solomon Codes Beyond Johnson: Efficient Decoding and Smaller
+Cryptographic Proofs}.
 
 \paragraph{Finite interpolation.}
-\Cref{sec:exact-certificate} gives the exact dimension of a derivative-
-weighted monomial space, the kernel of the full local map, an exact rank
-for an enlarged map, and a block decomposition of the actual map.
-\Cref{sec:one-sided-estimates} preserves the one-sided dimension and
-coordinate estimates behind the earlier support analysis.
-These formulas distinguish an exact rank from a coordinate-count upper
-bound and yield a finite interpolation certificate.
-\Cref{sec:optimized-parameters} preserves fixed-parameter low-order
-examples and the logarithmically shrinking-gap consequence of the main
-paper's certificate. \Cref{sec:quantitative-refinements} preserves finite
-first-order and Johnson constants, exact Johnson tuning, and the proved
-dominance over an earlier full-differentiation envelope.
-\Cref{app:boundary-asymptotics} analyzes a different, one-sided support
-with the rate and gap held fixed as the derivative order grows.
+\Cref{sec:exact-certificate} computes the local kernel and separates the
+exact rank of an enlarged map from that of the actual interpolation map.
+The resulting formulas support explicit small-order certificates and finite
+comparisons in \Cref{sec:optimized-parameters,sec:quantitative-refinements}.
+For an alternative one-sided support, \Cref{app:boundary-asymptotics}
+derives a fixed-gap boundary law directly from the exact dimension formula.
 
-\paragraph{Root finding and characteristic.}
-\Cref{sec:root-finding} records the regular-lifting and separant-chain lemmas
-used by the main paper, then develops alternative all-root and stratified bounds.
-\Cref{sec:primitive-normalization,sec:refinements} treat primitive
-normalization, descent to the field generated by the data, resonant
-coefficient lifting, and randomized regular witnesses.
-The extension to characteristic growing linearly with the block length
-is a corollary of the main paper's interpolation certificate and the
-resonant root bound. The Frobenius obstruction in
-\Cref{sec:characteristic} concerns the present support and its
-unfiltered differential roots, not every possible list decoder.
+\paragraph{Differential roots.}
+\Cref{sec:root-finding,sec:refinements} explain how regular Taylor data
+determine a solution, how vanishing recurrence coefficients introduce free
+choices, and how descent to the field generated by the input reduces
+enumeration cost. These bounds enumerate differential roots before checking
+agreement. The main paper's faster decoders instead use agreement to filter
+the family before enumeration.
 
-\paragraph{Agreement lists near capacity.}
-\Cref{sec:sharpness} gives elementary upper bounds, coefficient-fiber
-lower bounds for arbitrary evaluation sets, and multiplicative-coset
-constructions. The distinctions between fixed gap, varying gap, and
-sufficiently large block length are part of the statements.
-These examples constrain list-size guarantees without giving matching
-lower bounds on the derivative order of hidden-derivative interpolation.
+\paragraph{Obstructions.}
+\Cref{sec:characteristic} constructs large differential-root families in
+small characteristic; the obstruction concerns the specified support,
+not every possible decoder. \Cref{sec:sharpness} constructs large agreement
+lists and distinguishes a fixed positive gap from a gap that shrinks with
+block length. These constructions do not give matching lower bounds on
+interpolation order.
 
-\paragraph{Reading the companion.}
-We recall the polynomial and local-interpolation conventions, so most
-auxiliary arguments can be read here directly.
-References explicitly marked ``of the main paper'' link to
-\href{rs-beyond-johnson.pdf}{the accompanying main PDF}; their numbering belongs to
-that manuscript. In particular, the support certificate is an external
-input where cited. The exact counting and source-audit appendices are
-retained here. The main paper's verification paragraph describes the
-checked Lean scope; it does not assert formal verification of all the
-auxiliary results collected in this companion.
+\paragraph{Conventions and supporting material.}
+We recall the definitions needed here. References marked ``main paper''
+link to \href{rs-beyond-johnson.pdf}{the accompanying PDF} and use its
+numbering. Application certificates and measurement procedures are documented
+for ProveKit, ZisK, and LambdaVM in the repository's
+\href{https://github.com/quangvdao/rs-beyond-johnson/blob/main/CALCULATIONS.md}{calculation guide}. The main paper's AI-assistance disclosure applies
+to both manuscripts; the authors take responsibility for the statements and
+proofs here. Its formalization claims do not extend to every result in this
+companion.
 
-\paragraph{Authorship and assistance.}
-This companion was separated from the same AI-assisted research draft
-as the main paper. Its account of assistance and author responsibility
-applies to both manuscripts. The authors are responsible for all
-statements and proofs retained here.
+{\small\setcounter{tocdepth}{1}\tableofcontents}
  \section{Preliminaries}
 \label{sec:preliminaries}
-
-We collect the notation and background used by the interpolation,
-root-counting, and correlated-agreement arguments. The discussion fixes
-our agreement and Hasse-derivative conventions, records the backward
-Taylor identity, and introduces the Taylor-jet and algebraic-geometric
-language needed later.
 
 Throughout the paper, \(\F_q\) denotes a finite field,
 \(\N=\{0,1,2,\ldots\}\), and \([n]=\{1,\ldots,n\}\).
@@ -204,31 +168,12 @@ hypotheses.  We write \(\F_q[X]_{\leq D}\) for the vector space of univariate
 polynomials of degree at most \(D\), including the zero polynomial.
 We take $\deg 0=-\infty$, so the degree inequalities below also include it.
 
-\paragraph{Counting and probability notation.}
-For a real number $x$, its positive part is $x_+:=\max\{x,0\}$.
-Thus $(u-z)_+^2$ means $\bigl(\max\{u-z,0\}\bigr)^2$; in the
-integrals below the integrand is zero whenever $z\ge u$.
-The indicator $\mathbf1_{\{\mathcal P\}}$ equals one when the condition
-$\mathcal P$ holds and zero otherwise. We write $\#S$ or $|S|$ for
-the cardinality of a finite set $S$. For a nonnegative vector $x$,
-$|x|$ denotes the sum of its coordinates; for a scalar it denotes
-absolute value.
-
-We write $\Pr[\mathcal A]$ for the probability of an event and
-$\E{U}$ for the expectation of a random variable $U$, under the
-specified distribution. In particular, $\E{U^2}$ is the second moment,
-whereas $\bigl(\E{U}\bigr)^2$ is the square of the mean.
-The variance is $\operatorname{Var}(U)=\E{(U-\E{U})^2}$.
-For a Euclidean region $S$, $\operatorname{vol}(S)$ denotes its Lebesgue
-volume; a uniform point of $S$ is sampled from normalized volume.
-
-Unless a base is displayed, $\log$ denotes the natural logarithm.
-We use the harmonic sums
-$H_t=\sum_{j=1}^t j^{-1}$ and $H_t^{(2)}=\sum_{j=1}^t j^{-2}$,
-with both sums zero at $t=0$. A subscript on asymptotic notation,
-such as $O_\delta(\cdot)$, indicates that its implicit constant may
-depend on that parameter. Section-specific notation is introduced
-where its role in the argument becomes relevant.
+We use $(x)_+=\max\{x,0\}$, the indicator $\mathbf1_{\{\mathcal P\}}$,
+and natural logarithms. For vectors of nonnegative exponents, $|x|$ denotes
+the sum of the coordinates. The boundary asymptotic uses Lebesgue volume,
+expectation, and the harmonic sums
+$H_t=\sum_{j=1}^t j^{-1}$ and $H_t^{(2)}=\sum_{j=1}^t j^{-2}$.
+Subscripts on $O(\cdot)$ indicate the parameters on which its constant depends.
 
 \subsection{Reed--Solomon codes and agreement}
 
@@ -289,12 +234,8 @@ The definition is valid in every characteristic and gives
 \(\deg P^{[j]}\leq D-j\) whenever \(\deg P\leq D\), with a zero derivative
 when \(j>D\).
 
-Ordinary Taylor expansion uses derivatives at $X$ to obtain the value
-at $X+T$. The backward identity below uses derivatives at $X+T$ to
-recover the value at $X$. The hidden-derivative constraints use this
-inversion of
-\Cref{eq:hasse-taylor}.  We include the short proof because every sign and
-power of \(T\) enters the local multiplicity calculation.
+The backward identity recovers a value from derivatives at the shifted
+point. It is the input to the hidden-derivative multiplicity argument.
 
 \begin{lemma}[Backward Taylor identity]
 \label{lem:backward-taylor}
@@ -350,55 +291,19 @@ $s$ at $X=\alpha$.
 \subsection{Taylor data and polynomial differential equations}
 \label{sec:taylor-terminology}
 
-\paragraph{Taylor coefficients and jets.}
-At a chosen point $a$, the identity
-$P(a+T)=\sum_j P^{[j]}(a)T^j$ writes the polynomial in powers of
-$X-a$. We call $a$ the \emph{Taylor center} and the values
-$P^{[j]}(a)$ its \emph{Taylor coefficients} there. An order-$r$
-\emph{jet} is simply the finite tuple
-\[
- (P(a),P^{[1]}(a),\ldots,P^{[r]}(a)).
-\]
-Equivalently, it records $P(a+T)$ modulo $T^{r+1}$.
-Thus ``initial Taylor data'' and ``initial jet'' refer to these first
-$r+1$ coefficients; neither term requires analytic power series or
-convergence.
+At a center $a$, an order-$r$ \emph{jet} is the tuple
+$(P(a),P^{[1]}(a),\ldots,P^{[r]}(a))$ of coefficients in $P(a+T)$.
+A polynomial differential equation $Q(X,Y_0,\ldots,Y_r)=0$ is solved by
+$P$ when $Q(X,P,P^{[1]},\ldots,P^{[r]})$ vanishes identically.
+Its \emph{order} is the highest derivative index present; its \emph{jet degree}
+is total degree in the $Y_j$, ignoring $X$.
 
-\paragraph{Differential equations and jet degree.}
-We encode a polynomial differential equation by a nonzero polynomial
-$Q(X,Y_0,\ldots,Y_r)$. A polynomial $P$ solves it when substituting
-$Y_j=P^{[j]}(X)$ makes $Q$ identically zero. The $Y_j$ are called
-\emph{jet variables} because, at a fixed $X=a$, they stand for the
-entries of the jet. The \emph{order} is the largest index $r$ on
-which $Q$ actually depends. Its \emph{total jet degree} is its total
-degree in $Y_0,\ldots,Y_r$, ignoring $X$ and any challenge variable.
-These are different quantities: $Q=Y_1-Y_0^2$ has order one and
-jet degree two.
-
-\paragraph{The separant and regular Taylor data.}
-For an equation of actual order $r$, its \emph{separant} is the
-ordinary partial derivative
-\[
- S=\frac{\partial Q}{\partial Y_r}.
-\]
-A solution's jet at $a$ is \emph{regular for this equation} if
-$S(a,P(a),\ldots,P^{[r]}(a))\ne0$; otherwise we call it singular.
-The separant matters because it multiplies each new unknown coefficient
-in the reconstruction equation. Under the characteristic hypotheses
-used below, a regular jet therefore determines successive coefficients
-uniquely. Singular solutions are handled by passing to the separant
-equation and repeating; this is the \emph{separant chain}.
-
-\paragraph{Taylor reconstruction and charts.}
-A \emph{Taylor recurrence} is the equation used to compute the next
-coefficient from those already known. A \emph{lift} extends an initial
-jet to a longer coefficient sequence satisfying the equation to the
-required order. The resulting formulas express the later coefficients
-as rational functions of the initial ones. We call this
-parameterization a \emph{Taylor chart}, restricted to the initial data
-where its denominators are nonzero. In particular, a chart is a map
-from a short tuple of coefficients to the reconstructed polynomial
-coefficients; its degree bounds control the subsequent counting argument.
+For an equation of order $r$, the \emph{separant} is $S=\partial Q/\partial Y_r$.
+A jet at $a$ is regular if $S(a,P(a),\ldots,P^{[r]}(a))\ne0$.
+The separant multiplies each new unknown in the Taylor recurrence; when the
+other scalar multipliers are also nonzero, the recurrence determines later
+coefficients. The root-counting sections state the characteristic assumptions
+that make this reconstruction valid.
 
 \subsection{Weighted degree}
 
@@ -427,42 +332,6 @@ the reason to distinguish the actual derivative weights from the common
 upper bound $D$ used in the weighted-support certificate.
 
 
-\subsection{Terminology for counting polynomial families}
-\label{sec:geometric-terminology}
-
-The counting proofs use sets of coefficient tuples satisfying polynomial
-equations. We recall the geometric terminology here; the specific
-counting inequalities are stated where they are used.
-
-An \emph{affine algebraic set} is a common zero set of polynomials in
-finitely many coordinates. We work over an algebraically closed field,
-meaning that every nonconstant univariate polynomial splits into linear
-factors. A \emph{locus} simply means the set satisfying the stated
-conditions; these may include inequalities such as $S\ne0$.
-A \emph{hypersurface} is the zero set of one nonconstant polynomial;
-a \emph{hyperplane} is the case of a degree-one equation.
-The \emph{Zariski closure} of a set is the smallest algebraic set
-containing it. An \emph{irreducible component} is a maximal piece
-that cannot be written as a union of two proper algebraic subsets.
-
-Intuitively, dimension counts the independent parameters in such a
-family. The \emph{degree} of an irreducible $s$-dimensional algebraic
-set is the number of points, counted with multiplicity, obtained by
-intersecting its projective closure (which also includes points at
-infinity) with a linear subspace of
-codimension $s$ in general position. Here general position means that
-the choices avoid the algebraic conditions causing a degenerate
-intersection. A point and a linear space each have degree one.
-For a set with several components, our \emph{total degree} sums their
-degrees, including components of different dimensions. The degree
-bounds limit how many pieces can remain as we impose agreement equations.
-
-A \emph{rational map} has coordinates that are ratios of polynomials;
-it is used only where its denominators are nonzero. Its
-\emph{image closure} is the Zariski closure of the values it takes.
-An \emph{incidence} is a point together with an equation it satisfies.
-Thus counting agreement incidences means counting pairs consisting of
-a candidate and a coordinate where it agrees with the received word.
  \paragraph{A staircase count.}
 For the finite certificates and boundary asymptotics, we use
 \begin{equation}
@@ -571,7 +440,7 @@ and below $m$. Thus it preserves every matrix entry, kernel, rank, and
 jet-degree grouping. If $y$ depends on a challenge, its challenge degrees
 are preserved as well. We can therefore compute ranks in the $E$
 coordinates while using \Cref{lem:local-multiplicity} for every order.
- 
+
 \subsection{Obtaining an explainer from the local constraints}
 We now combine the conditions from all received positions. Enough
 available coefficients will guarantee a nonzero interpolant; enough
@@ -829,7 +698,7 @@ Under \eqref{eq:normalized-full-local-map}, such a monomial becomes
 \[
   T^{a+(d+1)b}Z^bY_1^{c_1}\cdots Y_d^{c_d}.
 \]
-Distinct source monomials that survive modulo \(T^m\) have distinct target
+Distinct source monomials that are nonzero modulo \(T^m\) have distinct target
 monomials.  The kernel is therefore spanned by those with
 \(a+(d+1)b\geq m\), and the displayed generators are exactly the minimal
 monomials with that property.  Restricting a linear map to \(\mathcal U\)
@@ -1277,367 +1146,14 @@ sum on the right after removing the factor \(n\).  Finally,
 hypothesis of \Cref{prop:global-interpolation-principle}.  That proposition
 gives the nonzero interpolant and \Cref{eq:certificate-differential-equation}.
 \end{proof}
- \section{One-sided supports and ambient-dimension estimates}
-\label{sec:one-sided-estimates}
-
-This section retains the dimension and reachable-coordinate estimates for
-an alternative one-sided interpolation support. They isolate the effect of
-ambient padding and weighted-simplex enlargement, and supply context for
-\Cref{app:boundary-asymptotics}. The sharper weighted-support certificate
-is proved in the main paper; its proof is not repeated here.
-
-Fix a gap \(\delta\in(0,1)\), and define the baseline ambient rate
-\[
-  \rho_0:=\frac{\delta(1-\delta)}2.
-\]
-For a code of dimension \(k\) and block length \(n\), set
-\begin{equation}
-  A:=k+\lceil\delta n\rceil,
-  \qquad
-  K:=\max\{k,\lceil\rho_0 n\rceil\},
-  \qquad
-  D:=K-1.
-  \label{eq:adaptive-ambient}
-\end{equation}
-Throughout this section we assume \(A\le n\).
-
-\subsection{Uniform ambient geometry}
-
-Write \(r=k/n\) and
-\[
-  \rho(r):=\max\{r,\rho_0\},
-  \qquad
-  \eta(r):=r+\delta.
-\]
-The factor \(1/2\) in this baseline leaves extra room at the low-rate
-endpoint. It is not needed for the qualitative all-rate result. The
-weighted-support proof in \Cref{M-sec:optimized-parameters} of the main paper uses the larger
-baseline \(\delta/2\), implemented by \(\lfloor\delta n/2\rfloor\), and a
-separate endpoint analysis.
-
-\begin{lemma}[Adaptive ambient bounds]
-\label{lem:adaptive-ambient-bounds}
-Suppose \(A\le n\). Then \(0\le r\le1-\delta\), \(k\le K<A\), and
-\begin{equation}
-  \rho(r)\ge\frac{\delta(1-\delta)}2,
-  \qquad
-  \frac{\eta(r)}{\rho(r)}\ge\frac1{1-\delta},
-  \qquad
-  1-\frac{\rho(r)}{\eta(r)}\ge\delta.
-  \label{eq:uniform-ambient-geometry}
-\end{equation}
-Moreover,
-\[
-  \frac{A}{D}>\frac{\eta(r)}{\rho(r)}
-\]
-whenever \(D>0\), and \(D/n\ge\rho_0-1/n\).
-\end{lemma}
-
-\begin{proof}
-The inequality \(A\le n\) and the definition of \(A\) imply
-\(k+\delta n\le n\), hence \(r\le1-\delta\). If \(K=k\), then \(K<A\) because
-\(\lceil\delta n\rceil\ge1\). If \(K=\lceil\rho_0n\rceil\), then
-\(K\le\lceil\delta n\rceil<A\), where the strict inequality uses \(k\ge1\).
-
-The first inequality in \eqref{eq:uniform-ambient-geometry} is immediate. If \(r\ge\rho_0\), then
-\[
-  \frac{\eta(r)}{\rho(r)}=\frac{r+\delta}{r}
-  \ge \frac{1}{1-\delta},
-\]
-because \(r\le1-\delta\). If \(r\le\rho_0\), then
-\[
-  \frac{\eta(r)}{\rho(r)}
-  =\frac{2(r+\delta)}{\delta(1-\delta)}
-  \ge \frac{2}{1-\delta}
-  >\frac{1}{1-\delta}.
-\]
-The third inequality is equivalent to \(\rho(r)\le(1-\delta)(r+\delta)\). For
-\(r\ge\rho_0\), this reduces to \(r\le1-\delta\); for \(r\le\rho_0\), it follows from
-\(\rho_0=\delta(1-\delta)/2\le(1-\delta)(r+\delta)\).
-
-Finally, \(A/n\ge\eta(r)\), while \(D/n<\rho(r)\): in the branch \(K=k\), we have
-\(D=k-1<rn\), and in the other branch \(D=\lceil\rho_0n\rceil-1<\rho_0n\).
-The lower bound on \(D/n\) follows from \(K\ge\lceil\rho_0n\rceil\).
-\end{proof}
-
-The additive padding \(K=k+\lfloor\lambda\delta n\rfloor\) also gives uniform separation, but it
-unnecessarily increases the ambient degree when \(k\) is already linear in \(n\). The adaptive choice
-\eqref{eq:adaptive-ambient} uses padding only near rate zero and makes the elementary uniform bounds
-particularly simple.  More generally, every fixed baseline in
-\((0,\delta(1-\delta)]\) works qualitatively. We retain the present
-half-baseline for this existence proof and for the one-sided optimization in
-\Cref{app:boundary-asymptotics}; it is not the ambient choice in the
-weighted-support certificate.
-
-\subsection{Dimension and coordinate estimates}
-
-We now compare the source dimension with the number of reachable local coordinates. Unlike BCPZZ's
-large-kernel analysis, the proof counts the local output coordinates
-directly. This shorter comparison isolates the two asymptotic effects that
-matter: the formal remainder exponent has about \(m/d\) choices, while
-enlarging the weighted simplex costs only \(d^{1/a}\).
-
-Let
-\[
-  \gamma:=\frac1{1-\delta},
-\]
-and choose fixed real numbers \(1<a<b<\gamma\). For an integer \(d\ge3\), put
-\[
-  m=d^3,
-  \qquad
-  H=H_{d-1}:=\sum_{j=1}^{d-1}\frac1j,
-  \qquad
-  W=\left\lfloor\frac{adm}{H}\right\rfloor,
-  \qquad
-  C=\lceil bm\rceil.
-\]
-For \(c=(c_2,\ldots,c_d)\in\Z_{\ge0}^{d-1}\), recall
-\[
-  |c|=\sum_{j=2}^dc_j,
-  \qquad
-  \omega(c)=\sum_{j=2}^d(j-1)c_j,
-\]
-and define
-\[
-  \mathcal B=\{c\in\Z_{\ge0}^{d-1}:\omega(c)\le W,\ |c|\le C\}.
-\]
-Let \(\Qspace_{\mathrm{coarse}}\) be the span of the monomials
-\begin{equation}
-  X^xY_0^{b_0}Y_1^{b_1}Y^c,
-  \qquad
-  c\in\mathcal B,\quad 0\le b_1\le m,\quad x,b_0\in\N,
-  \qquad
-  x+D(b_0+b_1+|c|)<mA.
-  \label{eq:coarse-interpolation-space}
-\end{equation}
-Every specialization at a polynomial of degree at most \(D\) has degree
-less than \(mA\).
-
-The next dimension calculation reformulates the counting argument in
-\cite[Lemma~3.2]{BCPZZ26}, with the ambient degree substituted for the actual
-message degree and the strict inequalities and rounding retained. It is
-governed by the function
-\begin{equation}
-  f(u):=\frac12\int_0^1\positive{u-z}^{2}\,dz
-  =
-  \begin{cases}
-    0,&u\le0,\\
-    u^3/6,&0\le u\le1,\\
-    (3u^2-3u+1)/6,&u\ge1.
-  \end{cases}
-  \label{eq:dimension-function}
-\end{equation}
-
-\begin{lemma}[Coarse dimension lower bound]
-\label{lem:coarse-dimension}
-Suppose \(D>d\). For all sufficiently large \(d\), uniformly over all \(n,k\) with \(A\le n\),
-\[
-  \dim\Qspace_{\mathrm{coarse}}
-  \ge
-  |\mathcal B|D m^3
-  f\left(\frac{A}{D}-\frac{C}{m}\right).
-\]
-Consequently, for all sufficiently large \(n\),
-\begin{equation}
-  \frac{\dim\Qspace_{\mathrm{coarse}}}{n}
-  \ge
-  \frac{\rho_0}{2}|\mathcal B|m^3
-  f\left(\frac{\gamma-b}{2}\right).
-  \label{eq:uniform-dimension-lower}
-\end{equation}
-\end{lemma}
-
-\begin{proof}
-For fixed \(c,b_1\), put
-\(L=mA-D(|c|+b_1)\). The number of pairs \((x,b_0)\in\Z_{\ge0}^2\) with
-\(x+Db_0<L\) is at least \(L_+^2/(2D)\). Since \(|c|\le C\), summing over
-\(0\le b_1\le m\) and comparing the decreasing sum with its integral gives
-\[
-  \dim\Qspace_{\mathrm{coarse}}
-  \ge |\mathcal B|\frac D2
-  \sum_{b_1=0}^m\positive{mA/D-C-b_1}^{2}
-  \ge |\mathcal B|Dm^3f(A/D-C/m).
-\]
-By \Cref{lem:adaptive-ambient-bounds}, \(A/D>\gamma\). Since \(C/m\to b\) as
-\(d\to\infty\), the argument of \(f\) is at least \((\gamma-b)/2\) for large \(d\).
-The same lemma gives \(D/n\ge\rho_0/2\) for large \(n\), proving
-\eqref{eq:uniform-dimension-lower}.
-\end{proof}
-
-Define
-\[
-  \Lambda(z):=\#\{c\in\Z_{\ge0}^{d-1}:\omega(c)\le z\}.
-\]
-
-\begin{lemma}[Weighted-simplex enlargement]
-\label{lem:uniform-simplex-enlargement}
-For fixed \(1<a<b\) and \(m=d^3\),
-\begin{equation}
-  \frac{\Lambda(W+m)}{|\mathcal B|}=O_{a,b}(d^{1/a}).
-  \label{eq:uniform-simplex-enlargement}
-\end{equation}
-\end{lemma}
-
-\begin{proof}
-Consider the weighted simplex
-\[
-  S_W=\left\{x\in\mathbb R_{\ge0}^{d-1}:\sum_{j=1}^{d-1}jx_j\le W\right\}.
-\]
-Its volume is \(W^{d-1}/((d-1)!)^2\), and a uniform point \(X\in S_W\) satisfies
-\(\E{|X|}=WH/d\le am\). Markov's inequality shows that the portion with
-\(|X|\le C\) has volume at least \((1-a/b)\operatorname{vol}(S_W)\). Taking coordinatewise floors
-maps this portion into \(\mathcal B\), so
-\[
-  |\mathcal B|\ge(1-a/b)\frac{W^{d-1}}{((d-1)!)^2}.
-\]
-Conversely, the disjoint unit cubes based at the lattice points counted by \(\Lambda(W+m)\) lie in
-the simplex of radius \(W+m+\binom d2\). Hence
-\[
-  \Lambda(W+m)
-  \le\frac{(W+m+\binom d2)^{d-1}}{((d-1)!)^2}.
-\]
-Since \(W=(1+o(1))adm/H\), their ratio is at most
-\[
-  \frac b{b-a}
-  \left(1+\frac{m+\binom d2}{W}\right)^{d-1}
-  =O_{a,b}(e^{H/a})=O_{a,b}(d^{1/a}).
-\]
-\end{proof}
-
-\begin{lemma}[Direct local-coordinate bound]
-\label{lem:direct-local-coordinate-bound}
-For every received pair \((\alpha,y)\),
-\begin{equation}
-  \rank\!\left(
-    \Phi_{\alpha,y}|_{\Qspace_{\mathrm{coarse}}}
-  \right)
-  \le
-  \left\lceil\frac{mA}{D}\right\rceil
-  \sum_{r=0}^{m-1}
-  \left\lceil\frac{m-r}{d+1}\right\rceil
-  \Lambda(W+r).
-  \label{eq:direct-local-coordinate-bound}
-\end{equation}
-If \(m=d^3\), \(d\ge3\), and \(n\ge2/\rho_0\), then
-\begin{equation}
-  \rank\!\left(
-    \Phi_{\alpha,y}|_{\Qspace_{\mathrm{coarse}}}
-  \right)
-  \le
-  \left(\frac2{\rho_0}+1\right)
-  \frac{m^3}{d}\Lambda(W+m).
-  \label{eq:direct-local-coordinate-coarse}
-\end{equation}
-Consequently,
-\begin{equation}
-  \frac{
-    \rank(\Phi_{\alpha,y}|_{\Qspace_{\mathrm{coarse}}})
-  }{|\mathcal B|m^3}
-  =
-  O_{\delta,a,b}\left(d^{-(1-1/a)}\right).
-  \label{eq:direct-local-power-saving}
-\end{equation}
-\end{lemma}
-
-\begin{proof}
-Expand a source monomial after the local substitution and consider a
-retained output coordinate
-\[
-  T^iE^hY_1^eY^z.
-\]
-Constants arising from \(\alpha\) and \(y\) only lower source exponents.
-Every coordinate therefore satisfies
-\begin{equation}
-  i\ge h,\qquad
-  \omega(z)\le W+i-h,\qquad
-  i+dh<m,\qquad
-  h+e+|z|<\frac{mA}{D}.
-  \label{eq:coarse-reachable-coordinates}
-\end{equation}
-Put \(r=i-h\). The second inequality allows at most \(\Lambda(W+r)\)
-choices for \(z\). The local truncation becomes
-\(r+(d+1)h<m\), so \(h\) has at most
-\(\lceil(m-r)/(d+1)\rceil\) possible values. Finally, after fixing
-\((r,h,z)\), the last inequality allows at most
-\(\lceil mA/D\rceil\) possible values for \(e\). The rank is at most the
-number of reachable output coordinates, which proves
-\eqref{eq:direct-local-coordinate-bound}.
-
-For \(m=d^3\) and \(d\ge3\),
-\[
-  \sum_{r=0}^{m-1}
-  \left\lceil\frac{m-r}{d+1}\right\rceil
-  \le \frac{m(m+1)}{2d}+m
-  \le \frac{m^2}{d}.
-\]
-Moreover, \(D\ge\rho_0n/2\) when \(n\ge2/\rho_0\), while \(A\le n\).
-Thus
-\[
-  \left\lceil\frac{mA}{D}\right\rceil
-  \le\left(\frac2{\rho_0}+1\right)m.
-\]
-Monotonicity of \(\Lambda\) gives
-\eqref{eq:direct-local-coordinate-coarse}. Dividing by
-\(|\mathcal B|m^3\) and applying
-\Cref{lem:uniform-simplex-enlargement} proves
-\eqref{eq:direct-local-power-saving}.
-\end{proof}
-
-The one-sided weighted support and the comparison between a weighted simplex
-and its enlargement are adapted from BCPZZ. The ambient padding and the
-direct coordinate count are new.
-
-
-\begin{corollary}[Existence of a one-sided interpolation certificate]
-\label{thm:uniform-interpolation}
-For every fixed \(\delta\in(0,1)\), there exist integers
-\[
-  d=d(\delta),\qquad m=m(\delta),\qquad W=W(\delta),\qquad C=C(\delta),
-\]
-and \(N=N(\delta)\) such that, for every \(n\ge N\), every
-\(1\le k\le n\) with \(A=k+\lceil\delta n\rceil\le n\), and the adaptive
-ambient dimension \eqref{eq:adaptive-ambient},
-\[
-  \dim\Qspace_{\mathrm{coarse}}
-  >
-  n\,
-  \rank\!\left(
-    \Phi_{\alpha,y}|_{\Qspace_{\mathrm{coarse}}}
-  \right)
-\]
-for every received pair \((\alpha,y)\). Hence a nonzero common interpolant
-exists, and every degree-at-most-\(D\) polynomial with at least \(A\)
-agreements satisfies its differential equation. The same derivative order
-\(d(\delta)\) works for every \(k\).
-\end{corollary}
-
-\begin{proof}
-Choose \(1<a<b<1/(1-\delta)\). The constant on the right-hand side of
-\eqref{eq:uniform-dimension-lower} is positive. Since \(1-1/a>0\), the right-hand side of
-\eqref{eq:direct-local-power-saving} tends to zero as \(d\to\infty\).
-Choose one sufficiently large \(d\), set \(m=d^3\), and choose \(W,C\) as
-above. For all sufficiently large \(n\), the lower bound for
-\(\dim\Qspace_{\mathrm{coarse}}/n\) in
-\eqref{eq:uniform-dimension-lower} is strictly larger than the local rank
-bound in \eqref{eq:direct-local-power-saving}. Stacking the \(n\) local maps
-therefore leaves a nonzero common kernel. The specialization-degree bound
-following \eqref{eq:coarse-interpolation-space}, together with
-\Cref{prop:global-interpolation-principle}, proves the differential identity.
-All remaining requirements, including \(D>d\) and the individual degree bounds needed by root finding,
-hold after increasing \(N\), because \(D/n\ge\rho_0-1/n\) and every interpolation parameter is fixed.
-\end{proof}
  \section{Small-order certificates and shrinking gaps}
 \label{sec:optimized-parameters}
 
-The main manuscript now gives first-order certificates at gaps down to
-$0.2195$, together with linear list bounds and quadratic MCA bounds
-(\Cref{M-sec:low-order-interpolation}). The certificates below retain
-simpler boundary cases and their original exact-rank calculations.
-
-The following fixed-parameter certificates are not needed for the strongest
-derivative-order statement. They remain useful when one needs every
-interpolation parameter, including the multiplicity and jet degrees, to be
-independent of the block length.
+The certificates below use explicit parameters independent of block length.
+At order zero a linear equation in the message gives uniqueness; at order
+one an exact local-rank calculation certifies agreement $k+\lceil n/4\rceil$
+uniformly over the rate. These cases also supply the large-gap branches of
+\Cref{cor:linear-characteristic-decoding}.
 
 \begin{theorem}[Fixed-parameter small-order certificates]
 \label{thm:small-derivative-orders}
@@ -1779,7 +1295,7 @@ Substitution into \eqref{M-eq:main-derivative-order} of the main paper gives the
 Write $b=\Bjet(\delta_n)$. The parameter formulas give
 $m\delta_n^{-2}=n^{3/C+o(1)}$ and
 $b\delta_n^{-2}=n^{3/C+o(1)}$. Thus $C>3$ makes both quantities
-$o(n)$, so the current finite hypothesis
+$o(n)$, so the main paper's finite length condition
 \[
  n\geq\max\{\lceil m/\delta_n^2\rceil,
               \lceil4b/\delta_n^2\rceil\}
@@ -1794,9 +1310,9 @@ asymptotic form.
  \section{Finite quantitative refinements}
 \label{sec:quantitative-refinements}
 
-This section preserves finite constants and comparisons that supplement
-the main paper's asymptotic bounds. References prefixed by ``main paper''
-point to the corresponding statements in that manuscript.
+We evaluate first-order and Johnson bounds at finite block lengths, and
+compare the resulting constants with full differentiation. The tables use
+exact integer parameter choices to expose losses hidden by asymptotic notation.
 
 \subsection{Concrete first-order constants}
 
@@ -2018,7 +1534,7 @@ $1\le m\le4m_0$ and every permitted $B$, where $m_0$ is the closed
 multiplicity; it makes no global optimality claim. The MCA columns use the
 unified transfer and are rounded down to valid integer bounds; the list
 column uses main-paper \eqref{M-eq:johnson-list-bound}.
-\begin{table}[ht]
+\begin{table}[!t]
 \centering\small
 \begin{tabular}{c r c r r r}
 \toprule
@@ -2033,16 +1549,16 @@ $1/2$ & $46{,}996$ & $(15,21,234)$ & 15 & $13{,}537{,}540{,}252$ & $1{,}448{,}63
 for the MCA error probability.}
 \label{tab:johnson-finite-constants}
 \end{table}
- \subsection{Regular lifting and the separant chain}
+ \section{Differential roots from Taylor data}
 \label{sec:root-finding}
 
-We count the solutions of a differential equation that agree with the
-received word, using Kopparty's reconstruction from a regular initial Taylor
-jet~\cite[Theorem~4.3, Theorem~4.4, and Corollary~4.5]{Kopparty15}.
-Below the characteristic, the required binomial coefficients are
-nonzero, so such a jet has at most one lift. An explicit derivative
-chain controls singular solutions; coefficient-space incidence then
-gives a list bound independent of the field size.
+We count and enumerate all polynomial solutions of a differential equation,
+using Kopparty's reconstruction from regular initial Taylor
+jets~\cite[Theorem~4.3, Theorem~4.4, and Corollary~4.5]{Kopparty15}.
+A regular jet determines at most one solution below the characteristic.
+Passing to derivative equations supplies regular witnesses for the remaining
+solutions. Counting these witnesses over a finite extension bounds the full
+root set; agreement filtering may leave a smaller list.
 
 Recall the Hasse-derivative convention of
 \Cref{def:hasse-derivative} and the weighted degree of
@@ -2139,8 +1655,8 @@ Every solution has a first nonzero specialization along this chain;
 the preceding equation vanishes and its separant does not.
 Under the hypotheses of \Cref{lem:unique-regular-lift}, a regular initial
 jet determines at most one solution. Enumerating all jets counts all
-differential roots; restricting them by received-word agreement gives
-the field-independent lists needed for decoding.
+differential roots; checking received-word agreement then selects the
+requested messages.
  For the algorithmic statements below, \(\operatorname{size}(Q)\) denotes the bit length of the sparse
 coefficient-list representation of \(Q\), with exponents written in binary.
 
@@ -2292,130 +1808,44 @@ Then
 \end{theorem}
 
 \begin{proof}
-If \(\Delta=0\), then \(Q\) is a nonzero polynomial in \(X\), so the root
-set is empty.  Assume henceforth that \(\Delta>0\).
-
-Set \(E:=\F_S\).  We first bound all solutions in \(E[X]_{\le D}\); the
-desired \(\F_q\)-solutions form a subset.  Consider any nonzero iterated
-partial derivative \(R\) of \(Q\), allowing \(R=Q\).  If \(R\) is
-independent of all \(Y\)-variables, then \(R\in E[X]\setminus\{0\}\) and has
-no solutions.  Otherwise, let \(s\) be the largest index such that \(R\)
-depends on \(Y_s\).  No assumption is made that \(R\) depends on the
-intermediate variables.  Put
-\[
-  t:=\deg_{Y_s}R,
-  \qquad
-  \delta_R:=\deg_YR,
-\]
-and define
-\begin{equation}
-  R_a:=\frac{\partial^aR}{\partial Y_s^a},
-  \qquad 0\le a\le t.
-  \label{eq:partial-derivative-chain}
-\end{equation}
-Since \(t\le\delta_R\le\Delta<q\), the polynomial
-\begin{equation}
-  R_t=t!\operatorname{LC}_{Y_s}(R)
-  \label{eq:terminal-partial-derivative}
-\end{equation}
-is nonzero and does not depend on \(Y_s\).
-
-Write \(\mathcal Z_D(R)\) for the set of \(P\in E[X]_{\le D}\) satisfying
-\[
-  R(X,P,\ldots,P^{[s]})\equiv0,
-\]
-where variables absent from \(R\) are simply ignored.  These solutions split
-into regular strata and a residual singular stratum.  For \(0\le a<t\), the
-\(a\)-th regular stratum consists of those \(P\in\mathcal Z_D(R)\) for which
-\begin{equation}
-  R_b(X,P,\ldots,P^{[s]})\equiv0
-  \quad(0\le b\le a),
-  \qquad
-  R_{a+1}(X,P,\ldots,P^{[s]})\not\equiv0.
-  \label{eq:regular-stratum}
-\end{equation}
-The remaining solutions make every \(R_1,\ldots,R_t\) vanish identically
-and therefore belong to \(\mathcal Z_D(R_t)\).  Since \(R_t\) has active
-order strictly below \(s\), or is independent of all \(Y\)-variables, this
-is the residual equation in the recursion.
-
-Fix a solution \(P\) in a regular stratum and write
-\[
-  H_P(X):=R_{a+1}(X,P,\ldots,P^{[s]}).
-\]
-Every such separant is a nonzero positive-order partial derivative of the
-original \(Q\).  Differentiating with respect to \(Y_j\) lowers weighted
-degree by at least \(D-j\ge D-r\).  Together with
-\eqref{eq:root-specialization-degree}, this gives
-\begin{equation}
-  \deg H_P\le \ell-(D-r)\le h.
-  \label{eq:separant-degree-bound}
-\end{equation}
-Thus \(H_P(\alpha)\ne0\) for at least \(S-h\) values \(\alpha\in E\).
-
-We next count the regular solution-point pairs \((P,\alpha)\), jointly
-across all regular strata.  Fix \(\alpha\in E\) and
-\(\beta_0,\ldots,\beta_{s-1}\in E\), and consider the univariate polynomial
-\begin{equation}
-  f(Z):=R(\alpha,\beta_0,\ldots,\beta_{s-1},Z).
-  \label{eq:fiber-polynomial}
-\end{equation}
-For a pair in the \(a\)-th stratum, with
-\(z=P^{[s]}(\alpha)\), condition \eqref{eq:regular-stratum} says that
-\[
-  f(z)=f'(z)=\cdots=f^{(a)}(z)=0,
-  \qquad
-  f^{(a+1)}(z)\ne0.
-\]
-Since \(\deg f\le t<q\), these are precisely the roots of \(f\) classified
-by their exact multiplicity.  Across all \(a<t\), there are at most \(t\)
-possible values of \(z\).  For each resulting regular initial jet,
-\Cref{lem:unique-regular-lift}, applied to the equation \(R_a=0\), gives at
-most one degree-at-most-\(D\) solution.  Hence the number of regular
-solution-point pairs is at most
-\begin{equation}
-  S\cdot tS^s.
-  \label{eq:regular-pair-upper-bound}
-\end{equation}
-On the other hand, every regular solution contributes at least \(S-h\)
-pairs.  The number of regular solutions is therefore at most
-\begin{equation}
-  \frac{S}{S-h}\,tS^s.
-  \label{eq:regular-solution-bound}
-\end{equation}
-
-It remains to account for the residual equation \(R_t=0\).  Its total
-\(Y\)-degree satisfies
-\begin{equation}
-  \deg_YR_t\le\delta_R-t.
-  \label{eq:residual-total-degree}
-\end{equation}
-The residual \(R_t\) is again an iterated partial derivative of \(Q\), so
-the same separant-degree bound applies at every lower active order.
-If \(s=0\), then \(R_t\) has no \(Y\)-variables and contributes no residual
-solutions, so \eqref{eq:regular-solution-bound} already gives the desired
-bound.  Suppose \(s\ge1\).  Induction on the active order, with the base
-case of a nonzero polynomial in \(E[X]\), now gives
-\begin{align}
-  |\mathcal Z_D(R)|
-  &\le
-  \frac{S}{S-h}
-  \left(tS^s+(\delta_R-t)S^{s-1}\right) \\
-  &\le
-  \frac{S}{S-h}\,\delta_RS^s.
-  \label{eq:root-bound-induction}
-\end{align}
-If the active order of \(R_t\) is \(s'<s\), the induction
-hypothesis gives the residual contribution
-\(\frac{S}{S-h}(\delta_R-t)S^{s'}\), which is no larger than the term
-displayed above; if \(R_t\) has no \(Y\)-variables, its residual contribution
-is zero.  Applying \eqref{eq:root-bound-induction} to \(R=Q\), whose active
-order is at most \(r\), proves \eqref{eq:sharpened-root-bound}.
+The individual jet degrees are at most $\Delta<q$, and
+\eqref{eq:chain-singularity-generic-bound} gives $H_{\rm ch}(Q)\le h$.
+Apply \Cref{thm:root-bound} and use $S-H_{\rm ch}(Q)\ge S-h>0$.
 \end{proof}
 
-The preceding proof is constructive.  We state the resulting algorithm
-separately because later sections use its running time as well as its list
-bound.
+For the resonance analysis below, we also need to group consecutive
+steps of the derivative chain by their active order. Let $R$ be a nonzero
+iterated partial derivative of $Q$ over $E=\F_S$. If $R$ depends on jet
+variables, let $s$ be its largest active order and $t=\deg_{Y_s}R$. Put
+\begin{equation}
+ R_a=\frac{\partial^aR}{\partial Y_s^a},\qquad 0\le a\le t.
+ \label{eq:partial-derivative-chain}
+\end{equation}
+Since $t<q$, the terminal polynomial
+\begin{equation}
+ R_t=t!\operatorname{LC}_{Y_s}(R)
+ \label{eq:terminal-partial-derivative}
+\end{equation}
+is nonzero and has smaller active order. Write $\mathcal Z_D(R)$ for
+the differential root set of $R$ in $E[X]_{\le D}$. The roots of $R$ split
+according to their first nonzero derivative specialization: for some
+$0\le a<t$, they satisfy
+\begin{equation}
+ R_b(X,P,\ldots,P^{[s]})\equiv0\quad(0\le b\le a),\qquad
+ R_{a+1}(X,P,\ldots,P^{[s]})\not\equiv0.
+ \label{eq:regular-stratum}
+\end{equation}
+These are the regular multiplicity strata. The remaining roots belong to
+$\mathcal Z_D(R_t)$, so we continue with the lower-order equation.
+At a point where $R_{a+1}$ is nonzero, the last jet coordinate is a root
+of exact multiplicity $a+1$ of
+$R(\alpha,\beta_0,\ldots,\beta_{s-1},Z)$. Thus all regular strata together
+allow at most $t$ last coordinates for each fixed lower jet. Moreover,
+$\deg_YR_t\le\deg_YR-t$, so the degrees $t$ encountered along the
+residual recursion sum to at most $\Delta$.
+
+The enumeration guarantee in \Cref{thm:root-bound} likewise has the
+following parameter-only form.
 
 \begin{corollary}[Constructive root enumeration]
 \label{cor:root-enumeration}
@@ -2432,20 +1862,10 @@ bit operations. In particular, if \(e,r,\Delta\) are fixed and
 \end{corollary}
 
 \begin{proof}
-If \(\Delta=0\), then \(Q\) is a nonzero polynomial in \(X\), so the root set is empty and can be returned
-after reading \(Q\).  Assume \(\Delta>0\).
-Follow the residual chain \eqref{eq:terminal-partial-derivative}.  At each
-polynomial \(R\) and each regular stratum, enumerate \(\alpha\in E\) and all
-initial jets in \(E^{s+1}\), retain the regular jets, and apply the
-reconstruction in \Cref{lem:unique-regular-lift} to the equation \(R_a=0\).
-Verify the original polynomial identity, retain only polynomials with
-coefficients in \(\F_q\), and remove duplicates.  The degrees \(t\)
-encountered along the residual chain sum to at most \(\Delta\), so there are
-at most \(\Delta\) regular strata.  Each stratum enumerates at most
-\(S^{r+2}\) point-jet pairs.  Arithmetic and all identity checks take time
-polynomial in the displayed parameters.  A representation of \(E\) can be
-constructed deterministically within the same bound, for example by
-enumerating monic degree-\(e\) polynomials and testing irreducibility.
+Apply the enumeration algorithm of \Cref{thm:root-bound}, since
+$S>h\ge H_{\rm ch}(Q)$. A representation of $E=\F_{q^e}$ can be
+constructed within the same bound by enumerating monic degree-$e$
+polynomials over $\F_q$ and testing irreducibility.
 \end{proof}
 
 \subsection{Specialization to the interpolant}
@@ -2543,7 +1963,7 @@ its nonzero coefficients, and put \(Q^{\rm prim}=Q/g\). Since
   \label{eq:primitive-part-same-roots}
 \end{equation}
 Passing to the primitive part cannot increase the jet degrees or weighted
-degree. The theorem below applies directly to either polynomial.
+degree. The root bounds above apply to either polynomial.
 If this optional normalization is used, its cost must be charged to the
 original input: grouping $M$ sparse monomials by their jet exponents,
 computing coefficient gcds, and performing divisions takes
@@ -2745,7 +2165,7 @@ jet order and set \(t=\deg_{Y_s}R\).  The hypothesis \(t<p\) implies that
 \(R_t:=\partial^tR/\partial Y_s^t\) is nonzero and has active order below
 \(s\).
 
-As in the proof of \Cref{thm:root-bound-stratified}, the roots of \(R\)
+Using the decomposition in \eqref{eq:regular-stratum}, the roots of \(R\)
 split into \(t\) regular multiplicity strata and the residual roots of
 \(R_t\).  For a root in a regular stratum, the corresponding separant is a
 nonzero positive-order partial derivative of \(Q\).  Its specialization has
@@ -3008,7 +2428,7 @@ with constant probability.  In characteristic two, the absolute trace to
 \(\F_2\) gives the analogous split.  Repeating only failed splits preserves
 correctness and gives polynomial expected time.
 
-For a fiber of degree \(t\), at most \(t\) top jet values survive.  The
+For a fiber of degree \(t\), at most \(t\) top jet values are retained.  The
 lower-jet choices and the resonant branches number at most
 \[
   S^sS^{\kappa_s(D,p)-s}\leq S^\kappa.
@@ -3031,17 +2451,6 @@ polynomial in \(\log q_0\) and does not change
 \eqref{eq:random-witness-time}.
 \end{proof}
 
-For an interpolant produced from the received instance, the multiplicity
-argument places the requested agreement list inside its differential root
-set.  Combining
-\Cref{thm:data-field-descent,thm:resonant-root-bound,thm:agreement-upper-bounds}
-therefore gives three simultaneous list bounds.  One may take the minimum of the differential
-bound \eqref{eq:resonant-root-bound}, the subset bound
-\eqref{eq:subset-agreement-bound}, and, when its denominator is positive,
-the Johnson-type bound \eqref{eq:johnson-agreement-bound}.  Over a prime
-field with \(D<q\), the data field is the full field and
-\(\kappa=d\).  Over a proper extension field, descent can reduce the base
-of the exponential root-finding term from \(q\) to \(q_0\).
  \section{Small characteristic and the Frobenius obstruction}
 \label{sec:characteristic}
 
@@ -3054,9 +2463,6 @@ standard and is proved here for completeness. The obstruction identifies
 a support restriction that can prevent efficient enumeration of roots.
 
 \subsection{Two failures of coefficient lifting}
-
-There are two distinct reasons that the below-characteristic proof in
-\Cref{sec:root-finding} cannot be applied verbatim.
 
 \begin{proposition}[Characteristic failures]
 \label{prop:characteristic-failures}
@@ -3340,9 +2746,17 @@ The coefficient of \(L\) is positive by hypothesis, and rearranging proves
 \eqref{eq:johnson-agreement-bound}.
 \end{proof}
 
-These bounds constrain the agreement list rather than the differential-root
-set. They may be intersected with any algebraic root bound and remain valid
-when the present differential solver is ineffective.
+For an interpolant produced from the received instance, the multiplicity
+argument places the requested agreement list inside its differential root
+set.  Combining
+\Cref{thm:data-field-descent,thm:resonant-root-bound,thm:agreement-upper-bounds}
+therefore gives three simultaneous list bounds.  One may take the minimum of the differential
+bound \eqref{eq:resonant-root-bound}, the subset bound
+\eqref{eq:subset-agreement-bound}, and, when its denominator is positive,
+the Johnson-type bound \eqref{eq:johnson-agreement-bound}.  Over a prime
+field with \(D<q\), the data field is the full field and
+\(\kappa=d\).  Over a proper extension field, descent can reduce the base
+of the exponential root-finding term from \(q\) to \(q_0\).
 
 \subsection{A coefficient-pigeonhole construction}
 
@@ -3805,147 +3219,10 @@ For sufficiently large \(p\), this is at least \(c_0p\) for an absolute
 \(c_0>0\).  Since \(p\ge1/\delta\), the claim follows after decreasing
 the constant.
 \end{proof}
-\section{Refreshed application certificate values}
-\label{sec:refreshed-application-certificates}
-
-The application checkers distributed with this companion now select the
-tight first-order Taylor-degree model explicitly. The certificate engine's
-default remains the legacy model, so historical commands and stored baselines
-retain their original meaning.
-
-\paragraph{ProveKit over cubic Goldilocks.}
-For the second code in the retuned lookup configuration, with
-$(n,k,A)=(2048,128,453)$ and support $(38,23,133)$, the squarefree list
-bound is
-\[
- \Lambda\leq\frac{2659384185}{326}.
-\]
-The machine-readable certificate records the safe generic ceiling
-$8157621$. Since $\Lambda$ is an integer, the separation calculation can
-instead use the sharper floor $8157620$, which gives
-$137.0819759979$ bits with one out-of-domain evaluation. The
-successive-stage alternative has exact bound $15314557817/163$ and ceiling
-$93954343$, giving $130.0304965539$ bits in the same calculation. These are
-analytical bounds for the fixed retuned configuration, not measured proof
-sizes.
-
-\paragraph{ZisK compressed final proof.}
-At $51$ queries and $22$ grinding bits, the two batching stages contribute
-the exact error
-\[
- \frac{4073087021134687044}
- {(2^{64}-2^{32}+1)^3},
-\]
-or $130.1791716533$ bits. The corresponding query term has
-$128.0003360286$ bits under the checker's independent-uniform-output model.
-The native saved proofs remain $286013$ and $272783$ bytes. By contrast, the
-analytical field-vector accounting is $254032$ and $242272$ bytes; the latter
-figures are not serialized proof-file measurements.
-
-\paragraph{LambdaVM CPU certificate.}
-For the list that selects the $38$ main-column polynomials after the two
-early evaluations, the tight certificate gives
-\[
- \Lambda\leq\frac{367473974837}{3230},
- \qquad \lceil\Lambda\rceil=113769033.
-\]
-With the existing cubic-Goldilocks field, $20$ grinding bits, $208$ CPU
-queries, and the unchanged non-CPU profiles, the complete changed-component
-bound has $128.0627324732$ bits. The analytical field-and-hash accounting
-saves $55992$ bytes. The measured \texttt{rkyv} reduction below is $59832$
-bytes because it includes the serializer's actual query records, metadata,
-alignment, and the two new evaluation vectors.
-
-\section{Measured LambdaVM proof savings and overhead}
-\label{sec:lambda-measurements}
-
-The first-order bounds also support a concrete change to LambdaVM's CPU
-proof: reduce its query count from $219$ to $208$ and add two early
-evaluations of its $38$ main columns. We implement this experimental profile
-on a fork. On the same $32768$-instruction assembly benchmark and empty
-input, the complete CPU subproof shrinks from $1\,233\,024$ to
-$1\,173\,192$ serialized bytes: a saving of $59\,832$ bytes
-($59.832$ decimal KB, $4.85\%$)~\cite{LambdaVMMeasured2026}.
-This comparison includes every CPU commitment, claim, and opening, including
-the added evaluations, and excludes shared VM-level metadata.
-All $25$ non-CPU subproofs keep $219$ queries. The complete VM proof
-decreases by the same $59\,832$ bytes, from $36\,868\,888$ to $36\,809\,056$.
-Both proofs are generated, deserialized, and verified through the release
-CLI with their matching, caller-selected profiles. This is one measured
-workload, not an average over programs.
-
-\paragraph{Separating the two changes.}
-To identify the cost of the added evaluations, we cross their presence
-with the CPU query count. The resulting four cells have the following
-complete VM-proof sizes under \texttt{rkyv} serialization.
-\begin{center}
-\begin{tabular}{@{}lrrr@{}}
-\toprule
-Cell & CPU queries & Early evaluations & Bytes\\
-\midrule
-Control & $219$ & $0$ & $36\,868\,888$\\
-Evaluations only & $219$ & $2$ & $36\,870\,744$\\
-Queries only & $208$ & $0$ & $36\,807\,200$\\
-Actual profile & $208$ & $2$ & $36\,809\,056$\\
-\bottomrule
-\end{tabular}
-\end{center}
-The two early vectors add $1856$ bytes; removing eleven query records saves
-$61\,688$ bytes. These effects are additive, giving the $59\,832$-byte net
-saving. They include the serializer's metadata and alignment.
-The middle two cells are measurement instruments, not proposed protocol
-profiles; in particular, the $208$-query cell without early evaluations
-is not certified by the paper's argument.
-
-\paragraph{End-to-end timing and added work.}
-The normal-grinding experiment uses an Apple M4 Max with $16$ threads,
-release builds, and grinding factor $20$. We rotate the four cells through
-a balanced execution order and compare the actual profile with the control
-within each round. The reported $95\%$ intervals use a round-level
-percentile bootstrap of the paired mean~\cite{LambdaVMOverhead2026}.
-\begin{center}
-\begin{tabular}{@{}lrrr@{}}
-\toprule
-Measurement & Rounds per cell & Change (ms) & $95\%$ interval (ms)\\
-\midrule
-Proving & $20$ & $-15.2$ & $[-49.4,+18.9]$\\
-Whole verification & $50$ & $+0.02$ & $[-0.62,+0.52]$\\
-CPU verifier components & $50$ & $-0.081$ & $[-0.117,-0.048]$\\
-\bottomrule
-\end{tabular}
-\end{center}
-Neither end-to-end comparison resolves a latency change on this benchmark.
-The component measurements explain why verification can nonetheless do
-less work: at $208$ queries, evaluations add $0.167$~ms, whereas removing
-eleven queries with evaluations enabled saves $0.291$~ms. These are
-conditional effects from the four-cell experiment, not the difference
-between the actual profile and control; that net difference is the
-$-0.081$~ms component entry above.
-
-The prover's extra arithmetic is visible in diagnostic runs with grinding
-disabled: the actual profile retires $264.4$ million more instructions,
-about $0.1845\%$ of the control. Three-round single-thread isolation
-attributes roughly $305$~ms to the evaluation and DEEP work. This serial
-cost is not a $16$-thread latency estimate, since the table proofs run
-concurrently. The largest new transient buffer is $3$~MiB; process RSS,
-roughly $1.9$~GiB, does not resolve it. Separate encode, decode, and archive
-access measurements differ by less than $0.05$~ms. These codec runs were
-not interleaved, so their differences are descriptive.
-
-\paragraph{Scope and reproduction.}
-The experimental profile enforces one $32768$-row CPU chunk and retains
-cubic Goldilocks, blowup two, and the baseline grinding and batching.
-The mathematical certificate controls the changed CPU component; neither
-the certificate nor these measurements establish a new full-VM security
-theorem. The implementation and complete-proof reproduction record are
-pinned in~\cite{LambdaVMMeasured2026}. The supplied timing data and
-measurement report are distributed with this companion in
-\texttt{experiments/lambdavm-anchors}. Its checker verifies recorded byte
-arithmetic and recomputes paired mean timing contrasts; it does not rerun
-the prover or regenerate the reported bootstrap intervals.
-
  \section*{Acknowledgements}
 We thank Kai Zhe Zheng for close discussion and feedback, including a suggestion to name the central interpolation polynomial in BCPZZ the hidden-derivative explainer.
+Kominers thanks MIT Sloan's Technological Innovation, Entrepreneurship,
+and Strategic Management (TIES) Group for its hospitality during this work.
  \section*{Disclosure}
 The second and third authors are Research Partners at a16z crypto, which is
 an investor in various blockchain-based platforms, as well as in the crypto
@@ -3954,18 +3231,6 @@ ecosystem more broadly. General a16z disclosures are available at
  \bibliographystyle{alpha}
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{BCH{\etalchar{+}}26}
-
-\bibitem[Dao26a]{LambdaVMMeasured2026}
-Quang Dao.
-\newblock LambdaVM CPU RS anchors: complete-proof size experiment.
-\newblock Implementation 7310d1e8, measurement record c40323c8, September 2026.
-\newblock \url{https://github.com/quangvdao/lambda_vm/blob/c40323c85432d939567a96b6b00ec1e7f7067db0/docs/experiments/cpu_rs_anchors_v1.md}.
-
-\bibitem[Dao26b]{LambdaVMOverhead2026}
-Quang Dao.
-\newblock LambdaVM CPU Reed--Solomon anchor overhead: measurements and reproducibility.
-\newblock September 2026.
-\newblock \url{https://github.com/quangvdao/rs-beyond-johnson/tree/main/experiments/lambdavm-anchors}.
 
 \bibitem[BCH{\etalchar{+}}26]{BCHKS25}
 Eli {Ben-Sasson}, Dan Carmon, Ulrich Hab{\"o}ck, Swastik Kopparty, and
@@ -4046,115 +3311,8 @@ Jacob~T. Schwartz.
 \newblock {\em Journal of the ACM}, 27(4):701--717, 1980.
 
 \end{thebibliography}
- 
+
 \appendix
-\section{Exact counting identities}
-\label{app:exact-counts}
-
-We collect two elementary evaluations used in the finite and coarse interpolation estimates.
-
-\begin{lemma}[Closed form for the staircase count]
-\label{lem:staircase-closed-form}
-For integers $D\ge1$ and $t$, the function in \eqref{eq:staircase-count} satisfies
-\[
-  \mathsf N_D(t)=0
-  \quad\text{if }t\le0,
-\]
-and, if $t>0$, then
-\begin{equation}
-  \mathsf N_D(t)
-  =(s+1)t-\frac{Ds(s+1)}2,
-  \qquad
-  s=\left\lfloor\frac{t-1}{D}\right\rfloor.
-  \label{eq:staircase-closed-form}
-\end{equation}
-\end{lemma}
-
-\begin{proof}
-When $t\le0$, no nonnegative pair $(a,b)$ satisfies $a+Db<t$.  Suppose $t>0$.  For a fixed $b$, the
-admissible values are $a=0,\ldots,t-Db-1$, so there are $t-Db$ of them.  Such a value exists exactly for
-$0\le b\le s$.  Summing the arithmetic progression gives \eqref{eq:staircase-closed-form}.
-\end{proof}
-
-We next evaluate the aggregate residual-rank count used in the enlarged-map analysis. This is the specialization of
-\eqref{eq:exact-local-rank} with $M=m=d^3$ after replacing every $\Lambda_d(W+s)$ by its common upper
-bound.  Define
-\[
-  h_s=\left\lceil\frac{m-s}{d}\right\rceil,
-  \qquad
-  \beta_s=(s+1)(m+1)-(s-h_s+1)_+(m-h_s+1)_+.
-\]
-
-\begin{lemma}[Exact aggregate residual-rank count]
-\label{lem:exact-beta-sum}
-Let $d\ge2$ and $m=d^3$.  Then
-\begin{equation}
-  \sum_{s=0}^{m-1}\beta_s
-  =
-  \frac{
-    d^2(d^2-d+1)(2d^2+d+1)(4d^2-3d+5)
-  }{12}.
-  \label{eq:exact-beta-sum}
-\end{equation}
-Consequently,
-\begin{equation}
-  \frac1{m^3}\sum_{s=0}^{m-1}\beta_s
-  =
-  \frac{(d^2-d+1)(2d^2+d+1)(4d^2-3d+5)}{12d^7}
-  <\frac{2}{3d}.
-  \label{eq:exact-beta-normalized}
-\end{equation}
-\end{lemma}
-
-\begin{proof}
-Parameterize $s$ uniquely as
-\[
-  s=m-dh+t,
-  \qquad
-  1\le h\le d^2,
-  \qquad
-  0\le t<d.
-\]
-Then $h_s=h$.  Moreover,
-\[
-  s-h+1=d^3-(d+1)h+t+1.
-\]
-The identity
-\[
-  d^3+1=(d+1)(d^2-d+1)
-\]
-shows that this quantity is nonnegative exactly when $h\le d^2-d+1$; at the last such value it equals
-$t$.  Since $m-h+1>0$, the positive part can therefore be removed after restricting the second sum to that
-range.  Hence
-\begin{align}
-  \sum_{s=0}^{m-1}\beta_s
-  &=(m+1)\sum_{h=1}^{d^2}\sum_{t=0}^{d-1}(m-dh+t+1)\notag\\
-  &\quad-
-  \sum_{h=1}^{d^2-d+1}\sum_{t=0}^{d-1}
-  (m-(d+1)h+t+1)(m-h+1).
-  \label{eq:beta-two-sums}
-\end{align}
-Using
-\[
-  \sum_{t=0}^{d-1}t=\frac{d(d-1)}2,
-  \qquad
-  \sum_{h=1}^{H}h=\frac{H(H+1)}2,
-  \qquad
-  \sum_{h=1}^{H}h^2=\frac{H(H+1)(2H+1)}6
-\]
-in \eqref{eq:beta-two-sums}, with $H=d^2-d+1$, gives \eqref{eq:exact-beta-sum} after collecting factors.
-
-It remains to prove the strict inequality.  After multiplying by $12d^7$, it is equivalent to
-\[
-  (d^2-d+1)(2d^2+d+1)(4d^2-3d+5)<8d^6.
-\]
-The difference between the right and left sides is
-\[
-  d^4(10d-21)+d^2(11d-14)+3d-5.
-\]
-It equals \(17\) at \(d=2\), and every displayed group is positive for
-\(d\ge3\).
-\end{proof}
  \section{Source-level repairs to the low-rate proof}
 \label{app:source-audit}
 
@@ -4211,10 +3369,13 @@ and replace \(k-1\) by \(K-1\) throughout the interpolation support and the
 root-finding call.  Every degree-less-than-\(k\) message is an ambient
 candidate, and candidates of degree at least \(k\) are removed after root
 finding.  The source proof can take
-\(K=\lfloor(1-\theta)\varepsilon n\rfloor\).  For the one-sided support in this companion, the adaptive choice in
-\Cref{eq:adaptive-ambient} supplies both inequalities in
-\Cref{eq:source-ambient-repair-conditions} uniformly over the actual
-message dimension. The main paper uses a different ambient baseline in
+\(K=\lfloor(1-\theta)\varepsilon n\rfloor\).  For agreement $A=k+\lceil\delta n\rceil$, $0<\delta<1$, one may instead
+choose $K=\max\{k,\lceil\rho_0n\rceil\}$ with
+$\rho_0=\delta(1-\delta)/2$. Since $k\ge1$ and
+$\lceil\rho_0n\rceil\le\lceil\delta n\rceil$, both entries of the maximum
+are strictly smaller than $A$. Moreover,
+$(K-1)/n\ge\rho_0-1/n\ge\rho_0/2$ for $n\ge2/\rho_0$.
+The main paper uses a different ambient baseline in
 its weighted-support certificate (\Cref{M-thm:weighted-support}).
 
 \subsection{The ceiling in Lemma~3.2}
@@ -4324,10 +3485,8 @@ The main paper uses a weighted support to obtain its explicit derivative
 order. For comparison, this appendix records a sharper asymptotic analysis
 of the one-sided support from \Cref{sec:exact-certificate}. It identifies a
 natural Gumbel boundary law and an exact one-dimensional variational
-constant. The result is modular and is not used in the proof of
-\Cref{M-thm:main} of the main paper. Its limit keeps the rate and agreement
-fixed while $d\to\infty$; it does not justify a joint limit as the gap tends
-to zero.
+constant. The limit keeps the rate and agreement fixed while $d\to\infty$;
+it does not justify a joint limit as the gap tends to zero.
 
 Recall the staircase function \(\mathsf G\) from
 \Cref{eq:normalized-staircase-function}.
