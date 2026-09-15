@@ -1,0 +1,12 @@
+2026-09-15T01:31:55.400986Z cargo_zisk::commands::user::verify INFO:      Command ZiskVerify
+2026-09-15T01:31:55.401572Z cargo_zisk::commands::user::verify INFO: 
+2026-09-15T01:31:55.425296Z proofman_verifier::verifier DEBUG: Verifying proof
+2026-09-15T01:31:55.427613Z proofman_verifier::verifier DEBUG: Verifying Quotient polynomial
+2026-09-15T01:31:55.428588Z proofman_verifier::verifier DEBUG: Quotient polynomial verification passed
+2026-09-15T01:31:55.428592Z proofman_verifier::verifier DEBUG: Verifying final polynomial
+2026-09-15T01:31:55.428638Z proofman_verifier::verifier DEBUG: Final polynomial verification passed
+2026-09-15T01:31:55.428640Z proofman_verifier::verifier DEBUG: Proof verification succeeded
+2026-09-15T01:31:55.428676Z cargo_zisk::commands::user::verify INFO: ✓ STARK proof was verified
+2026-09-15T01:31:55.428678Z cargo_zisk::commands::user::verify INFO: --- VERIFICATION SUMMARY ---
+2026-09-15T01:31:55.428678Z cargo_zisk::commands::user::verify INFO:       time: 27 milliseconds
+2026-09-15T01:31:55.428679Z cargo_zisk::commands::user::verify INFO: ----------------------------

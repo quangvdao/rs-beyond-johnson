@@ -1,0 +1,793 @@
+kind	round	position	cell	marker
+prove	1	1	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2958
+prove	1	1	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=75038833
+prove	1	1	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=40101084 fri_query_ns=187458 openings_ns=522208
+prove	1	2	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4640542
+prove	1	2	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=10211625
+prove	1	2	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=31169375 fri_query_ns=346375 openings_ns=912250
+prove	1	3	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2292
+prove	1	3	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=13346333
+prove	1	3	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=39289458 fri_query_ns=196042 openings_ns=563000
+prove	1	4	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=6226709
+prove	1	4	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=67354209
+prove	1	4	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=7345167 fri_query_ns=222375 openings_ns=300416
+prove	2	1	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5050042
+prove	2	1	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=8928667
+prove	2	1	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=6357625 fri_query_ns=168000 openings_ns=436208
+prove	2	2	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2583
+prove	2	2	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=34277708
+prove	2	2	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=41155792 fri_query_ns=196500 openings_ns=523916
+prove	2	3	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=5370208
+prove	2	3	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=9532458
+prove	2	3	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=45578208 fri_query_ns=173833 openings_ns=318042
+prove	2	4	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2541
+prove	2	4	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=17782750
+prove	2	4	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=50866500 fri_query_ns=193292 openings_ns=582000
+prove	3	1	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=3250
+prove	3	1	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=10449083
+prove	3	1	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=29836333 fri_query_ns=166792 openings_ns=665000
+prove	3	2	control	OVERHEAD_PROVE_EARLY anchors=0 ns=3583
+prove	3	2	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=7515208
+prove	3	2	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=51318209 fri_query_ns=191958 openings_ns=969625
+prove	3	3	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5393209
+prove	3	3	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=38628541
+prove	3	3	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=72566625 fri_query_ns=170333 openings_ns=548042
+prove	3	4	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4757833
+prove	3	4	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=18580292
+prove	3	4	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=23996417 fri_query_ns=205042 openings_ns=682625
+prove	4	1	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4322292
+prove	4	1	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=33343958
+prove	4	1	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=5547667 fri_query_ns=204500 openings_ns=426334
+prove	4	2	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5415667
+prove	4	2	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=15027667
+prove	4	2	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=5820916 fri_query_ns=226333 openings_ns=574792
+prove	4	3	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2792
+prove	4	3	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=74420833
+prove	4	3	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=4428500 fri_query_ns=197709 openings_ns=519083
+prove	4	4	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=3166
+prove	4	4	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=29277333
+prove	4	4	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=74838667 fri_query_ns=172458 openings_ns=478541
+prove	5	1	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2583
+prove	5	1	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=47590458
+prove	5	1	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=36538708 fri_query_ns=184750 openings_ns=601542
+prove	5	2	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=5890917
+prove	5	2	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=37902458
+prove	5	2	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=18706292 fri_query_ns=169250 openings_ns=590208
+prove	5	3	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2875
+prove	5	3	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=38748834
+prove	5	3	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=115265000 fri_query_ns=187167 openings_ns=417625
+prove	5	4	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5095416
+prove	5	4	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=53626083
+prove	5	4	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=104589667 fri_query_ns=210542 openings_ns=526875
+prove	6	1	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5461042
+prove	6	1	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=40243416
+prove	6	1	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=4232083 fri_query_ns=182792 openings_ns=589916
+prove	6	2	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=3084
+prove	6	2	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=10266917
+prove	6	2	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=29753583 fri_query_ns=267292 openings_ns=964167
+prove	6	3	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4322334
+prove	6	3	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=38104333
+prove	6	3	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=19789417 fri_query_ns=321625 openings_ns=709916
+prove	6	4	control	OVERHEAD_PROVE_EARLY anchors=0 ns=3500
+prove	6	4	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=15373875
+prove	6	4	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=4763333 fri_query_ns=202500 openings_ns=594583
+prove	7	1	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2875
+prove	7	1	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=18661542
+prove	7	1	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=303833 fri_query_ns=200708 openings_ns=560375
+prove	7	2	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2917
+prove	7	2	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=19817291
+prove	7	2	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=8767625 fri_query_ns=196167 openings_ns=597333
+prove	7	3	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4489875
+prove	7	3	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=12688333
+prove	7	3	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=20125959 fri_query_ns=241708 openings_ns=708875
+prove	7	4	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4624416
+prove	7	4	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=9261625
+prove	7	4	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=52663041 fri_query_ns=453917 openings_ns=1195416
+prove	8	1	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4777417
+prove	8	1	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=30656750
+prove	8	1	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=41965709 fri_query_ns=209917 openings_ns=567084
+prove	8	2	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4600834
+prove	8	2	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=8508542
+prove	8	2	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=19945667 fri_query_ns=252000 openings_ns=370416
+prove	8	3	control	OVERHEAD_PROVE_EARLY anchors=0 ns=3375
+prove	8	3	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=14366208
+prove	8	3	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=82252458 fri_query_ns=225417 openings_ns=1055125
+prove	8	4	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2792
+prove	8	4	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=8451041
+prove	8	4	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=20289750 fri_query_ns=178167 openings_ns=374709
+prove	9	1	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2750
+prove	9	1	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=13847834
+prove	9	1	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=64666459 fri_query_ns=227334 openings_ns=753792
+prove	9	2	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4137959
+prove	9	2	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=22189458
+prove	9	2	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=6260042 fri_query_ns=250167 openings_ns=667833
+prove	9	3	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2834
+prove	9	3	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=45968875
+prove	9	3	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=15359167 fri_query_ns=173125 openings_ns=459542
+prove	9	4	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=5832625
+prove	9	4	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=9526917
+prove	9	4	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=752625 fri_query_ns=179583 openings_ns=407500
+prove	10	1	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4381000
+prove	10	1	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=7101417
+prove	10	1	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=22505541 fri_query_ns=202500 openings_ns=436417
+prove	10	2	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=3041
+prove	10	2	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=12461583
+prove	10	2	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=25092667 fri_query_ns=189250 openings_ns=448458
+prove	10	3	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4550250
+prove	10	3	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=9348500
+prove	10	3	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=1489000 fri_query_ns=167083 openings_ns=337833
+prove	10	4	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2792
+prove	10	4	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=30408125
+prove	10	4	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=7470416 fri_query_ns=202542 openings_ns=1766250
+prove	11	1	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2458
+prove	11	1	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=37906583
+prove	11	1	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=34406625 fri_query_ns=287500 openings_ns=2928833
+prove	11	2	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2292
+prove	11	2	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=6444709
+prove	11	2	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=43210292 fri_query_ns=187291 openings_ns=441167
+prove	11	3	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4360833
+prove	11	3	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=21489542
+prove	11	3	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=71333500 fri_query_ns=402709 openings_ns=1615042
+prove	11	4	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4759458
+prove	11	4	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=20064292
+prove	11	4	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=13192250 fri_query_ns=191459 openings_ns=479541
+prove	12	1	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=5071667
+prove	12	1	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=36943542
+prove	12	1	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=12234167 fri_query_ns=182292 openings_ns=653416
+prove	12	2	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4717417
+prove	12	2	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=19484542
+prove	12	2	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=39912042 fri_query_ns=193291 openings_ns=451042
+prove	12	3	control	OVERHEAD_PROVE_EARLY anchors=0 ns=3542
+prove	12	3	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=7669708
+prove	12	3	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=18801959 fri_query_ns=163917 openings_ns=506875
+prove	12	4	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2791
+prove	12	4	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=20739333
+prove	12	4	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=79017584 fri_query_ns=242500 openings_ns=724500
+prove	13	1	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2959
+prove	13	1	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=15638083
+prove	13	1	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=40528333 fri_query_ns=194084 openings_ns=906750
+prove	13	2	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4216625
+prove	13	2	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=7908875
+prove	13	2	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=34174750 fri_query_ns=215500 openings_ns=1163666
+prove	13	3	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2208
+prove	13	3	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=80539500
+prove	13	3	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=3684000 fri_query_ns=182875 openings_ns=696083
+prove	13	4	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4436792
+prove	13	4	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=15201500
+prove	13	4	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=3367250 fri_query_ns=173208 openings_ns=617625
+prove	14	1	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4831209
+prove	14	1	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=22707917
+prove	14	1	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=54295292 fri_query_ns=161959 openings_ns=395417
+prove	14	2	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2708
+prove	14	2	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=5729500
+prove	14	2	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=26293667 fri_query_ns=256375 openings_ns=392250
+prove	14	3	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=3747333
+prove	14	3	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=41225500
+prove	14	3	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=30907458 fri_query_ns=205167 openings_ns=410042
+prove	14	4	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2625
+prove	14	4	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=6124583
+prove	14	4	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=42675125 fri_query_ns=1264625 openings_ns=293417
+prove	15	1	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=3000
+prove	15	1	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=15247458
+prove	15	1	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=1657541 fri_query_ns=291834 openings_ns=1015084
+prove	15	2	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2875
+prove	15	2	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=41916375
+prove	15	2	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=12837917 fri_query_ns=191667 openings_ns=327042
+prove	15	3	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4715834
+prove	15	3	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=27188167
+prove	15	3	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=25706416 fri_query_ns=162250 openings_ns=1008834
+prove	15	4	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4399708
+prove	15	4	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=20900916
+prove	15	4	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=36068625 fri_query_ns=211000 openings_ns=471417
+prove	16	1	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=4357708
+prove	16	1	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=15196625
+prove	16	1	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=36885375 fri_query_ns=204125 openings_ns=510833
+prove	16	2	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=4356250
+prove	16	2	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=57486875
+prove	16	2	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=22131959 fri_query_ns=157625 openings_ns=420583
+prove	16	3	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2875
+prove	16	3	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=25107125
+prove	16	3	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=6321625 fri_query_ns=202250 openings_ns=557584
+prove	16	4	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2083
+prove	16	4	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=5951042
+prove	16	4	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=41745667 fri_query_ns=401708 openings_ns=1278542
+verify	1	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1334
+verify	1	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=290917 fri_ns=3372417
+verify	1	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=2125417
+verify	1	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4750
+verify	1	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=526542 fri_ns=3089500
+verify	1	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=2131792
+verify	1	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	1	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=258208 fri_ns=2819042
+verify	1	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1831041
+verify	1	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4875
+verify	1	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=449625 fri_ns=2869709
+verify	1	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1835708
+verify	2	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	2	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=419917 fri_ns=2768291
+verify	2	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1702708
+verify	2	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	2	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228750 fri_ns=2685459
+verify	2	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1707667
+verify	2	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	2	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=444875 fri_ns=2731416
+verify	2	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1785042
+verify	2	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1458
+verify	2	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=242250 fri_ns=2676625
+verify	2	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1745083
+verify	3	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1417
+verify	3	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227958 fri_ns=2593417
+verify	3	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1696792
+verify	3	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1916
+verify	3	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=258375 fri_ns=2790708
+verify	3	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1838917
+verify	3	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4042
+verify	3	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=411542 fri_ns=2612875
+verify	3	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1690791
+verify	3	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	3	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=477916 fri_ns=2814375
+verify	3	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1790958
+verify	4	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4041
+verify	4	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=410333 fri_ns=2617583
+verify	4	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1872958
+verify	4	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4041
+verify	4	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=406375 fri_ns=2646541
+verify	4	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1726875
+verify	4	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	4	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=262209 fri_ns=2687000
+verify	4	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1709375
+verify	4	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	4	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=234875 fri_ns=2605625
+verify	4	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1791083
+verify	5	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1417
+verify	5	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=242875 fri_ns=2760708
+verify	5	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1844750
+verify	5	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4042
+verify	5	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=472375 fri_ns=2760375
+verify	5	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1776083
+verify	5	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1667
+verify	5	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=232500 fri_ns=2608167
+verify	5	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1686000
+verify	5	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	5	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=410333 fri_ns=2593542
+verify	5	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1700250
+verify	6	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3875
+verify	6	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=425500 fri_ns=2589125
+verify	6	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1692917
+verify	6	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	6	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229000 fri_ns=2616125
+verify	6	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1688792
+verify	6	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4750
+verify	6	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=448000 fri_ns=2715000
+verify	6	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1777792
+verify	6	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	6	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=245166 fri_ns=2745625
+verify	6	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1810000
+verify	7	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1917
+verify	7	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=233417 fri_ns=2597167
+verify	7	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1699458
+verify	7	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1167
+verify	7	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=241208 fri_ns=2745667
+verify	7	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1775666
+verify	7	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	7	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=401208 fri_ns=2592917
+verify	7	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1686084
+verify	7	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4709
+verify	7	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=474334 fri_ns=2729417
+verify	7	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1775959
+verify	8	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4458
+verify	8	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=447667 fri_ns=2718166
+verify	8	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1775000
+verify	8	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4209
+verify	8	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=410167 fri_ns=2595625
+verify	8	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1687042
+verify	8	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1750
+verify	8	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=244375 fri_ns=2795167
+verify	8	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1848167
+verify	8	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1334
+verify	8	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228292 fri_ns=2622375
+verify	8	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1682333
+verify	9	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1167
+verify	9	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243167 fri_ns=2766292
+verify	9	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1781083
+verify	9	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=5250
+verify	9	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=447000 fri_ns=2745417
+verify	9	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1805583
+verify	9	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1292
+verify	9	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=235166 fri_ns=2611417
+verify	9	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1729084
+verify	9	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	9	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=406125 fri_ns=2661666
+verify	9	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1622292
+verify	10	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4042
+verify	10	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=403625 fri_ns=2629041
+verify	10	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1700834
+verify	10	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1042
+verify	10	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=230500 fri_ns=2605958
+verify	10	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1698000
+verify	10	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=3958
+verify	10	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=442833 fri_ns=2789083
+verify	10	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1760709
+verify	10	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	10	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=250458 fri_ns=2741167
+verify	10	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1772208
+verify	11	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1125
+verify	11	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=223334 fri_ns=2515292
+verify	11	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1724125
+verify	11	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	11	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=250333 fri_ns=2725708
+verify	11	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1877875
+verify	11	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	11	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404708 fri_ns=2507750
+verify	11	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1706792
+verify	11	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	11	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=459708 fri_ns=2781458
+verify	11	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1762834
+verify	12	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	12	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=457959 fri_ns=2731791
+verify	12	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1853208
+verify	12	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4291
+verify	12	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404458 fri_ns=2619125
+verify	12	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1696750
+verify	12	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	12	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=235958 fri_ns=2692416
+verify	12	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1788291
+verify	12	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1458
+verify	12	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229667 fri_ns=2631583
+verify	12	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1725750
+verify	13	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	13	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246625 fri_ns=2752333
+verify	13	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1804458
+verify	13	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	13	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=453000 fri_ns=2789000
+verify	13	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1793500
+verify	13	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1208
+verify	13	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=241458 fri_ns=2660625
+verify	13	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1722916
+verify	13	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	13	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=417959 fri_ns=2633000
+verify	13	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1690834
+verify	14	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4084
+verify	14	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=393708 fri_ns=2654000
+verify	14	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1725458
+verify	14	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	14	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=233292 fri_ns=2626583
+verify	14	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1670958
+verify	14	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4500
+verify	14	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=442041 fri_ns=2779542
+verify	14	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1764458
+verify	14	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	14	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246375 fri_ns=2799750
+verify	14	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1760375
+verify	15	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	15	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231667 fri_ns=2647250
+verify	15	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1706000
+verify	15	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	15	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=253583 fri_ns=2757750
+verify	15	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1783709
+verify	15	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4208
+verify	15	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=439583 fri_ns=2740125
+verify	15	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1736292
+verify	15	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4209
+verify	15	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=464792 fri_ns=2738083
+verify	15	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1785542
+verify	16	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4541
+verify	16	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=467250 fri_ns=2747041
+verify	16	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1743000
+verify	16	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3958
+verify	16	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=410250 fri_ns=2607958
+verify	16	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1693833
+verify	16	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1584
+verify	16	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246459 fri_ns=2762875
+verify	16	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1812958
+verify	16	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	16	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=230667 fri_ns=2598709
+verify	16	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1809875
+verify	17	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1334
+verify	17	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=250959 fri_ns=2764125
+verify	17	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1819584
+verify	17	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4083
+verify	17	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=443209 fri_ns=2713959
+verify	17	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1802708
+verify	17	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	17	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=236333 fri_ns=2607416
+verify	17	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1697875
+verify	17	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	17	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=411000 fri_ns=2580166
+verify	17	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1700834
+verify	18	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4167
+verify	18	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=408875 fri_ns=2568000
+verify	18	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1708333
+verify	18	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	18	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229625 fri_ns=2596709
+verify	18	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1723959
+verify	18	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	18	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=451333 fri_ns=2783583
+verify	18	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1777292
+verify	18	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	18	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=242209 fri_ns=2750125
+verify	18	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1765583
+verify	19	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	19	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228334 fri_ns=2554542
+verify	19	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1683459
+verify	19	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1417
+verify	19	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=237917 fri_ns=2672750
+verify	19	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1806791
+verify	19	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3834
+verify	19	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=416959 fri_ns=2595750
+verify	19	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1704167
+verify	19	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4084
+verify	19	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=444834 fri_ns=2726292
+verify	19	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1782791
+verify	20	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	20	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=468458 fri_ns=2755875
+verify	20	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1902375
+verify	20	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3958
+verify	20	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=414791 fri_ns=2601542
+verify	20	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1707042
+verify	20	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	20	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=257625 fri_ns=2797333
+verify	20	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1788083
+verify	20	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	20	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=253583 fri_ns=2651625
+verify	20	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1742875
+verify	21	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1334
+verify	21	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=242375 fri_ns=2745458
+verify	21	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1801334
+verify	21	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4167
+verify	21	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=443500 fri_ns=2743125
+verify	21	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1829500
+verify	21	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1667
+verify	21	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231250 fri_ns=2618166
+verify	21	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1714334
+verify	21	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	21	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=440625 fri_ns=2619000
+verify	21	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1708833
+verify	22	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3917
+verify	22	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=411625 fri_ns=2586250
+verify	22	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1729500
+verify	22	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	22	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=220166 fri_ns=2513458
+verify	22	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1693625
+verify	22	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4417
+verify	22	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=457542 fri_ns=2734916
+verify	22	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1791958
+verify	22	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1292
+verify	22	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246917 fri_ns=2781958
+verify	22	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1809042
+verify	23	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1416
+verify	23	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231750 fri_ns=2615750
+verify	23	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1723375
+verify	23	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1167
+verify	23	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=249041 fri_ns=2747667
+verify	23	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1793625
+verify	23	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4166
+verify	23	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=414125 fri_ns=2621292
+verify	23	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1707667
+verify	23	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4708
+verify	23	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=473375 fri_ns=2754417
+verify	23	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1903084
+verify	24	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	24	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=457750 fri_ns=2866084
+verify	24	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1803000
+verify	24	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	24	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=407125 fri_ns=2607250
+verify	24	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1686083
+verify	24	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	24	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=244791 fri_ns=2724750
+verify	24	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1788291
+verify	24	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1584
+verify	24	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=251958 fri_ns=2699417
+verify	24	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1686334
+verify	25	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1792
+verify	25	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=241459 fri_ns=2729458
+verify	25	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1796417
+verify	25	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4209
+verify	25	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=450292 fri_ns=2770084
+verify	25	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1793667
+verify	25	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1417
+verify	25	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228792 fri_ns=2590208
+verify	25	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1679250
+verify	25	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4208
+verify	25	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=390875 fri_ns=2537375
+verify	25	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1684917
+verify	26	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4291
+verify	26	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=402334 fri_ns=2604958
+verify	26	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1695500
+verify	26	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	26	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227083 fri_ns=2599250
+verify	26	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1688167
+verify	26	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	26	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=451541 fri_ns=2749625
+verify	26	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1794125
+verify	26	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	26	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=240791 fri_ns=2734750
+verify	26	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1798542
+verify	27	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1209
+verify	27	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227250 fri_ns=2603459
+verify	27	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1725125
+verify	27	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	27	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243542 fri_ns=2795459
+verify	27	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1791084
+verify	27	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4292
+verify	27	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=417583 fri_ns=2703625
+verify	27	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1508875
+verify	27	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4500
+verify	27	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=432875 fri_ns=2742791
+verify	27	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1799000
+verify	28	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4417
+verify	28	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=502208 fri_ns=2711750
+verify	28	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1778375
+verify	28	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	28	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=402834 fri_ns=2682042
+verify	28	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1628750
+verify	28	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1458
+verify	28	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=242750 fri_ns=2739416
+verify	28	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1806583
+verify	28	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1334
+verify	28	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229542 fri_ns=2603417
+verify	28	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1698875
+verify	29	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1583
+verify	29	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243458 fri_ns=2756583
+verify	29	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1866834
+verify	29	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4666
+verify	29	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=444084 fri_ns=2771542
+verify	29	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1857542
+verify	29	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1750
+verify	29	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231708 fri_ns=2612167
+verify	29	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1766459
+verify	29	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4000
+verify	29	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404625 fri_ns=2596209
+verify	29	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1717042
+verify	30	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	30	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=403750 fri_ns=2602125
+verify	30	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1720125
+verify	30	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	30	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=232542 fri_ns=2609417
+verify	30	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1826625
+verify	30	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	30	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=445875 fri_ns=2738292
+verify	30	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1930666
+verify	30	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1625
+verify	30	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243542 fri_ns=2704541
+verify	30	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1798750
+verify	31	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	31	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228083 fri_ns=2596583
+verify	31	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1693292
+verify	31	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1667
+verify	31	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=241750 fri_ns=2721750
+verify	31	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1794458
+verify	31	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4291
+verify	31	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=395375 fri_ns=2516958
+verify	31	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1699125
+verify	31	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4250
+verify	31	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=442916 fri_ns=2800375
+verify	31	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1816042
+verify	32	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4334
+verify	32	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=469417 fri_ns=2908584
+verify	32	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1815959
+verify	32	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4459
+verify	32	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=415958 fri_ns=2611833
+verify	32	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1692459
+verify	32	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	32	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=301625 fri_ns=2758250
+verify	32	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1762666
+verify	32	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	32	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=228583 fri_ns=2607833
+verify	32	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1688208
+verify	33	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1709
+verify	33	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=239000 fri_ns=2756916
+verify	33	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1780458
+verify	33	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4208
+verify	33	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=451500 fri_ns=2739000
+verify	33	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1774000
+verify	33	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	33	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=235208 fri_ns=2676000
+verify	33	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1679167
+verify	33	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4792
+verify	33	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=414875 fri_ns=2608625
+verify	33	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1711000
+verify	34	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4500
+verify	34	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=431125 fri_ns=2645625
+verify	34	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1687792
+verify	34	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1292
+verify	34	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229375 fri_ns=2616708
+verify	34	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1692333
+verify	34	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4167
+verify	34	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=485750 fri_ns=2720792
+verify	34	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1777000
+verify	34	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1625
+verify	34	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243208 fri_ns=2747208
+verify	34	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1821541
+verify	35	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1833
+verify	35	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=246250 fri_ns=2590125
+verify	35	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1686875
+verify	35	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1625
+verify	35	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=244458 fri_ns=2738875
+verify	35	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1807334
+verify	35	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	35	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=408917 fri_ns=2595916
+verify	35	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1702000
+verify	35	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4416
+verify	35	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=461167 fri_ns=2744250
+verify	35	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1902375
+verify	36	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4208
+verify	36	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=438958 fri_ns=2898125
+verify	36	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1823333
+verify	36	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4583
+verify	36	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404500 fri_ns=2639500
+verify	36	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1699791
+verify	36	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1208
+verify	36	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=263958 fri_ns=2597417
+verify	36	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1722000
+verify	36	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1541
+verify	36	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227542 fri_ns=2609417
+verify	36	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1695000
+verify	37	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1459
+verify	37	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=248208 fri_ns=2748334
+verify	37	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1776625
+verify	37	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4375
+verify	37	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=464750 fri_ns=2724958
+verify	37	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1781416
+verify	37	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	37	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231833 fri_ns=2611875
+verify	37	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1903625
+verify	37	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=3958
+verify	37	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=403209 fri_ns=2567125
+verify	37	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1685500
+verify	38	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	38	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404250 fri_ns=2639875
+verify	38	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1680292
+verify	38	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	38	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227625 fri_ns=2604791
+verify	38	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1731208
+verify	38	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4542
+verify	38	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=465416 fri_ns=2717042
+verify	38	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1763459
+verify	38	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1625
+verify	38	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=266333 fri_ns=2843958
+verify	38	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1894166
+verify	39	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1416
+verify	39	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=230583 fri_ns=2482083
+verify	39	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1620916
+verify	39	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1209
+verify	39	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=243209 fri_ns=2763042
+verify	39	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1807292
+verify	39	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=5333
+verify	39	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=445416 fri_ns=2627875
+verify	39	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1681875
+verify	39	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=3958
+verify	39	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=476250 fri_ns=2760709
+verify	39	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1774833
+verify	40	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4041
+verify	40	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=458084 fri_ns=2722125
+verify	40	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1780000
+verify	40	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4334
+verify	40	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=417583 fri_ns=2608958
+verify	40	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1680417
+verify	40	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1459
+verify	40	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=248208 fri_ns=2712917
+verify	40	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1773209
+verify	40	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	40	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=252542 fri_ns=2638875
+verify	40	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1695792
+verify	41	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1584
+verify	41	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=241250 fri_ns=2732083
+verify	41	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1785625
+verify	41	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	41	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=456917 fri_ns=2759500
+verify	41	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1752542
+verify	41	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	41	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=218958 fri_ns=2652625
+verify	41	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1680417
+verify	41	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4209
+verify	41	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=401125 fri_ns=2570834
+verify	41	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1680000
+verify	42	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4208
+verify	42	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=418958 fri_ns=2608625
+verify	42	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1695208
+verify	42	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1542
+verify	42	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=227709 fri_ns=2591792
+verify	42	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1681792
+verify	42	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4042
+verify	42	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=440291 fri_ns=2714583
+verify	42	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1789375
+verify	42	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	42	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=227792 fri_ns=2781417
+verify	42	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1804042
+verify	43	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=2459
+verify	43	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=255417 fri_ns=2611583
+verify	43	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1712791
+verify	43	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1292
+verify	43	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=262291 fri_ns=2819250
+verify	43	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1883750
+verify	43	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=5125
+verify	43	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=444375 fri_ns=2663375
+verify	43	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1698709
+verify	43	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4166
+verify	43	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=466167 fri_ns=2763541
+verify	43	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1786084
+verify	44	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4583
+verify	44	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=453125 fri_ns=2724292
+verify	44	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1790584
+verify	44	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4292
+verify	44	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=403208 fri_ns=2613125
+verify	44	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1732917
+verify	44	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1375
+verify	44	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=241041 fri_ns=2761500
+verify	44	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1808000
+verify	44	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	44	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=236875 fri_ns=2659917
+verify	44	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1685333
+verify	45	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1708
+verify	45	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246833 fri_ns=2762208
+verify	45	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1865000
+verify	45	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4125
+verify	45	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=562125 fri_ns=2668834
+verify	45	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1722791
+verify	45	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	45	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=237625 fri_ns=2737333
+verify	45	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1748709
+verify	45	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4458
+verify	45	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=404208 fri_ns=2644042
+verify	45	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1696792
+verify	46	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	46	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=406250 fri_ns=2644708
+verify	46	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1701792
+verify	46	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1291
+verify	46	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=225959 fri_ns=2583750
+verify	46	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1735000
+verify	46	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4042
+verify	46	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=443083 fri_ns=2666833
+verify	46	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1794041
+verify	46	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=2417
+verify	46	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=246625 fri_ns=2747625
+verify	46	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1812417
+verify	47	1	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=2333
+verify	47	1	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=230041 fri_ns=2639333
+verify	47	1	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1715542
+verify	47	2	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1292
+verify	47	2	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=236542 fri_ns=2761834
+verify	47	2	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1770833
+verify	47	3	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4334
+verify	47	3	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=412667 fri_ns=2495583
+verify	47	3	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1676167
+verify	47	4	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4292
+verify	47	4	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=408750 fri_ns=2620125
+verify	47	4	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1809375
+verify	48	1	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4500
+verify	48	1	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=437791 fri_ns=2808583
+verify	48	1	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1792750
+verify	48	2	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	48	2	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=430375 fri_ns=2666667
+verify	48	2	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1705042
+verify	48	3	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1167
+verify	48	3	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=247250 fri_ns=2706500
+verify	48	3	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1754375
+verify	48	4	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	48	4	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=237958 fri_ns=2551417
+verify	48	4	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1696209
+verify	49	1	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1250
+verify	49	1	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=240833 fri_ns=2743417
+verify	49	1	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1784417
+verify	49	2	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4209
+verify	49	2	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=459666 fri_ns=2721917
+verify	49	2	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1772958
+verify	49	3	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1500
+verify	49	3	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=231916 fri_ns=2594792
+verify	49	3	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1722375
+verify	49	4	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4291
+verify	49	4	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=407791 fri_ns=2588292
+verify	49	4	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1767708
+verify	50	1	actual	OVERHEAD_VERIFY_EARLY anchors=2 ns=4458
+verify	50	1	actual	OVERHEAD_VERIFY_CPU q=208 anchors=2 reconstruct_ns=406292 fri_ns=2578417
+verify	50	1	actual	OVERHEAD_VERIFY_OPENINGS q=208 anchors=2 ns=1735084
+verify	50	2	query_only	OVERHEAD_VERIFY_EARLY anchors=0 ns=1333
+verify	50	2	query_only	OVERHEAD_VERIFY_CPU q=208 anchors=0 reconstruct_ns=229792 fri_ns=2673583
+verify	50	2	query_only	OVERHEAD_VERIFY_OPENINGS q=208 anchors=0 ns=1698250
+verify	50	3	anchor_only	OVERHEAD_VERIFY_EARLY anchors=2 ns=4333
+verify	50	3	anchor_only	OVERHEAD_VERIFY_CPU q=219 anchors=2 reconstruct_ns=442958 fri_ns=2810709
+verify	50	3	anchor_only	OVERHEAD_VERIFY_OPENINGS q=219 anchors=2 ns=1800917
+verify	50	4	control	OVERHEAD_VERIFY_EARLY anchors=0 ns=1417
+verify	50	4	control	OVERHEAD_VERIFY_CPU q=219 anchors=0 reconstruct_ns=239666 fri_ns=2776708
+verify	50	4	control	OVERHEAD_VERIFY_OPENINGS q=219 anchors=0 ns=1797584

@@ -1,0 +1,13 @@
+diff --git a/verifier/src/poseidon1/vadcop_final_compressed.rs b/verifier/src/poseidon1/vadcop_final_compressed.rs
+index 2a260fa..f622da2 100644
+--- a/verifier/src/poseidon1/vadcop_final_compressed.rs
++++ b/verifier/src/poseidon1/vadcop_final_compressed.rs
+@@ -6964,7 +6964,7 @@ fn verifier_info() -> VerifierInfo {
+         n_bits: 15,
+         n_bits_ext: 19,
+         arity: 2,
+-        n_fri_queries: 54,
++        n_fri_queries: 51,
+         n_fri_steps: 4,
+         n_challenges: 6,
+         n_challenges_total: 11,

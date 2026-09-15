@@ -1,0 +1,17 @@
+*.aux
+!rs-beyond-johnson.aux
+*.log
+!experiments/zisk-compressed-final/baseline-q54/program-setup.log
+!experiments/zisk-compressed-final/baseline-q54/prove.log
+!experiments/zisk-compressed-final/baseline-q54/verify.log
+!experiments/zisk-compressed-final/revised-q51/verify-and-convert.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+__pycache__/
+*.pyc
+.DS_Store
+build/

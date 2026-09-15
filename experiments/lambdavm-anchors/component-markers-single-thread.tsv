@@ -1,0 +1,37 @@
+kind	round	position	cell	marker
+prove	1	1	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2292
+prove	1	1	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=250711250
+prove	1	1	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=23068667 fri_query_ns=147166 openings_ns=234042
+prove	1	2	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=13387833
+prove	1	2	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=538456833
+prove	1	2	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=438060333 fri_query_ns=174708 openings_ns=344750
+prove	1	3	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2000
+prove	1	3	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=254852834
+prove	1	3	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=52112916 fri_query_ns=167083 openings_ns=259750
+prove	1	4	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=12776834
+prove	1	4	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=550410792
+prove	1	4	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=147810292 fri_query_ns=138208 openings_ns=340417
+prove	2	1	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=13327792
+prove	2	1	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=532656084
+prove	2	1	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=39804458 fri_query_ns=154375 openings_ns=406041
+prove	2	2	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=2000
+prove	2	2	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=249566583
+prove	2	2	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=55710250 fri_query_ns=151958 openings_ns=218583
+prove	2	3	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=13266542
+prove	2	3	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=528381500
+prove	2	3	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=31624792 fri_query_ns=140500 openings_ns=302541
+prove	2	4	control	OVERHEAD_PROVE_EARLY anchors=0 ns=2041
+prove	2	4	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=242374875
+prove	2	4	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=38524209 fri_query_ns=154584 openings_ns=312584
+prove	3	1	query_only	OVERHEAD_PROVE_EARLY anchors=0 ns=1959
+prove	3	1	query_only	OVERHEAD_PROVE_DEEP q=208 anchors=0 ns=249629083
+prove	3	1	query_only	OVERHEAD_PROVE_CPU q=208 anchors=0 grind_ns=717023958 fri_query_ns=173583 openings_ns=291875
+prove	3	2	control	OVERHEAD_PROVE_EARLY anchors=0 ns=1834
+prove	3	2	control	OVERHEAD_PROVE_DEEP q=219 anchors=0 ns=234476417
+prove	3	2	control	OVERHEAD_PROVE_CPU q=219 anchors=0 grind_ns=63148125 fri_query_ns=145250 openings_ns=236583
+prove	3	3	actual	OVERHEAD_PROVE_EARLY anchors=2 ns=47151291
+prove	3	3	actual	OVERHEAD_PROVE_DEEP q=208 anchors=2 ns=617431416
+prove	3	3	actual	OVERHEAD_PROVE_CPU q=208 anchors=2 grind_ns=63881792 fri_query_ns=189458 openings_ns=332708
+prove	3	4	anchor_only	OVERHEAD_PROVE_EARLY anchors=2 ns=13157167
+prove	3	4	anchor_only	OVERHEAD_PROVE_DEEP q=219 anchors=2 ns=533784666
+prove	3	4	anchor_only	OVERHEAD_PROVE_CPU q=219 anchors=2 grind_ns=107160958 fri_query_ns=173458 openings_ns=301333

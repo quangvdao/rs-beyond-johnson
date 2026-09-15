@@ -1,0 +1,14 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 42e04d7..61534e1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -78,6 +78,9 @@ members = [
+ resolver = "2"
+ exclude = ["test-artifacts"]
+ 
++[patch.crates-io]
++proofman-verifier = { path = "../pil2-proofman-v1.2-measure/verifier" }
++
+ [profile.release]
+ opt-level = 3
+ 

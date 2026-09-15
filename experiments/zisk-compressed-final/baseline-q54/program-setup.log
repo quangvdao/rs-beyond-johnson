@@ -1,0 +1,20 @@
+
+[38;2;10;191;131m   ZisK zkVM 1.2.0-alpha[0m
+      System Darwin 25.6.0 (macOS 26.6.2)
+    Hostname [MEASUREMENT_HOST]
+     Command Rom Setup
+         Elf [ZISK_CHECKOUT]/elf-regressions/prebuilt-elfs/cpp_static_init.elf
+ Proving Key [ZISK_HOME]/provingKey
+
+2026-09-15T01:18:45.400384Z proofman_common::proof_ctx INFO: Creating proof context
+2026-09-15T01:18:45.400409Z proofman_common::global_info DEBUG: ··· Loading GlobalInfo JSON [ZISK_HOME]/provingKey
+2026-09-15T01:18:45.400643Z proofman_common::proof_ctx INFO: Using hash function: Poseidon1
+2026-09-15T01:18:45.479272Z proofman_common::proof_ctx INFO: Max prover buffer size: 18.82 GB
+2026-09-15T01:18:45.479278Z proofman_common::proof_ctx INFO: Max prover recursive buffer size: 0.00 Bytes
+2026-09-15T01:18:45.479279Z proofman_common::proof_ctx INFO: Max prover recursive1/recursive2 buffer size: 0.00 Bytes
+2026-09-15T01:18:45.479292Z cargo_zisk::commands::dev::program_setup INFO: Computing setup for ROM [ZISK_CHECKOUT]/elf-regressions/prebuilt-elfs/cpp_static_init.elf
+2026-09-15T01:18:45.479293Z cargo_zisk::commands::dev::program_setup INFO: Computing merkle root
+2026-09-15T01:18:45.479449Z zisk_sm_rom::custom_rom INFO: Computing custom trace ROM
+2026-09-15T01:18:49.656652Z zisk_rom_setup::rom_merkle INFO: Root hash: [15777087668666893146, 16678668276181977973, 5640210608378830030, 10558877877479506322]
+
+2026-09-15T01:18:49.656834Z cargo_zisk::commands::dev::program_setup INFO: ROM setup successfully completed

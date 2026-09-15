@@ -1,0 +1,122 @@
+[
+  {
+    "citation": "ZiskParameters2026",
+    "author": "ZisK contributors",
+    "title": "ZisK implementation and Proofman dependency",
+    "repository": "0xPolygonHermez/zisk",
+    "commit": "b08d856c0f72b21d94fc49151deefaf8e7419b79",
+    "primary_path": "Cargo.toml"
+  },
+  {
+    "citation": "ProofmanParameters2026",
+    "author": "Proofman contributors",
+    "title": "STARK parameter generation, security calculator, and proof serialization",
+    "repository": "0xPolygonHermez/pil2-proofman",
+    "commit": "0f3fef8cd1897df469532996e72e0c84ef69d6fb",
+    "primary_path": "setup/pil2-stark/src/types/security/pcs/fri.rs"
+  },
+  {
+    "citation": "ProveKitParameters2026",
+    "author": "World Foundation",
+    "title": "ProveKit backends and shared WHIR profile",
+    "repository": "worldfnd/ProveKit",
+    "commit": "6481f961fc78615811b9cbaa9aa2380f1f6703c9",
+    "primary_path": "provekit/common/src/whir_r1cs.rs"
+  },
+  {
+    "citation": "ProveKitWHIR2026",
+    "author": "World Foundation",
+    "title": "WHIR parameter generation and code-switch error bounds",
+    "repository": "worldfnd/whir",
+    "commit": "8804e80e8e890d01bb585f2bd5e5b564ac0fd80d",
+    "primary_path": "src/protocols/params/code_switch.rs"
+  },
+  {
+    "citation": "LambdaVMParameters2026",
+    "author": "LambdaVM contributors",
+    "title": "LambdaVM STARK proof options",
+    "repository": "yetanotherco/lambda_vm",
+    "commit": "8064a8efee4bd3edc9f064337d4e1d8bad54ae1a",
+    "primary_path": "crypto/stark/src/proof/options.rs"
+  },
+  {
+    "citation": "StoneParameters2026",
+    "author": "StarkWare",
+    "title": "Stone prover and Cairo end-to-end parameters",
+    "repository": "starkware-libs/stone-prover",
+    "commit": "1414a545e4fb38a85391289abe91dd4467d268e1",
+    "primary_path": "e2e_test/Cairo/cpu_air_params.json"
+  },
+  {
+    "citation": "StwoParameters2026",
+    "author": "StarkWare",
+    "title": "Stwo Circle STARK prover",
+    "repository": "starkware-libs/stwo",
+    "commit": "826591c6c371376810ca8213b5812d5daf6d5092",
+    "primary_path": "README.md"
+  },
+  {
+    "citation": "StwoCairoParameters2026",
+    "author": "StarkWare",
+    "title": "Stwo-Cairo production prover parameters",
+    "repository": "starkware-libs/stwo-cairo",
+    "commit": "2b1fb4ded5496fb2db4e8261cd5ee5ef6b710839",
+    "primary_path": "crates/prover/src/prover.rs"
+  },
+  {
+    "citation": "Plonky2Parameters2026",
+    "author": "Plonky2 contributors",
+    "title": "Plonky2 standard recursion configuration",
+    "repository": "0xPolygonZero/plonky2",
+    "commit": "5d9da5a65bbcba2c66eb29c035090eb2e9ccb05f",
+    "primary_path": "plonky2/src/plonk/circuit_data.rs"
+  },
+  {
+    "citation": "SP1Parameters2026",
+    "author": "Succinct Labs",
+    "title": "SP1 version 6.6.0 FRI parameters",
+    "repository": "succinctlabs/sp1",
+    "commit": "f5a5bbf6a1cf6007315b410d88678d96fb399fb5",
+    "primary_path": "crates/primitives/src/fri_params.rs"
+  },
+  {
+    "citation": "OpenVMParameters2026",
+    "author": "OpenVM contributors",
+    "title": "OpenVM 2.0.2 pinned backend production parameters",
+    "repository": "openvm-org/stark-backend",
+    "commit": "362c7ad8c6b042b320471a137e3eadec7ec69a44",
+    "primary_path": "crates/stark-sdk/src/config/mod.rs"
+  },
+  {
+    "citation": "ZkDTVMParameters2026",
+    "author": "AntChain OpenLabs",
+    "title": "zkDTVM verifier release configuration and proof fixture",
+    "repository": "AntChainOpenLabs/zkdtvm-stark-verifier",
+    "commit": "1a7870d44e70eccc6a9e9b87685a862d482f6295",
+    "primary_path": "whir_config_koalabear_ext5.json"
+  },
+  {
+    "citation": "VenusParameters2026",
+    "author": "Cysic Labs",
+    "title": "Venus version 0.2.5 STARK parameter synthesis",
+    "repository": "cysic-labs/venus",
+    "commit": "f2eb01c012f1977f3c056d74c13a02514f1c42ec",
+    "primary_path": "pk-setup-rs/src/stark_struct.rs"
+  },
+  {
+    "citation": "MidenParameters2026",
+    "author": "Miden contributors",
+    "title": "Miden prover security configuration",
+    "repository": "0xMiden/miden-vm",
+    "commit": "d5210343f4c6e6a7188b0c1f097a4b0a9c0c9b88",
+    "primary_path": "air/src/config.rs"
+  },
+  {
+    "citation": "SoundcalcParameters2026",
+    "author": "Ethereum soundcalc contributors",
+    "title": "Hash-based zkVM soundness calculator and pinned reports",
+    "repository": "ethereum/soundcalc",
+    "commit": "d9078d64c9c3ae15b0931f6d249b2dc073194f15",
+    "primary_path": "reports/summary.md"
+  }
+]

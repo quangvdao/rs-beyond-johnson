@@ -1,0 +1,21 @@
+{
+  "control_bytes": 36868888,
+  "experimental_bytes": 36809056,
+  "control_subproofs": 26,
+  "experimental_subproofs": 26,
+  "control_cpu_standalone_bytes": 1233024,
+  "experimental_cpu_standalone_bytes": 1173192,
+  "cpu_standalone_savings": 59832,
+  "control_cpu_only_vm_bytes": 1233200,
+  "control_empty_vm_bytes": 176,
+  "control_cpu_marginal_bytes": 1233024,
+  "experimental_cpu_only_vm_bytes": 1173368,
+  "experimental_empty_vm_bytes": 176,
+  "experimental_cpu_marginal_bytes": 1173192,
+  "control_cpu_shape": "trace:32768 main_root:1 aux_root:1 precomputed_root:0 early:[] ood:48x1 next_ood:1x1 composition_root:1 composition_parts:2 fri_roots:7 final_coeffs:128 queries:219 deep:219 deep_main_width:38 deep_aux_width:10 deep_composition_width:2 nonce:1 bus_inputs:1",
+  "experimental_cpu_shape": "trace:32768 main_root:1 aux_root:1 precomputed_root:0 early:[38, 38] ood:48x1 next_ood:1x1 composition_root:1 composition_parts:2 fri_roots:7 final_coeffs:128 queries:208 deep:208 deep_main_width:38 deep_aux_width:10 deep_composition_width:2 nonce:1 bus_inputs:1",
+  "gross_11_query_savings": 61688,
+  "rkyv_early_claim_cost": 1856,
+  "counterfactual_hybrid_bytes": 36809056,
+  "net_savings": 59832
+}

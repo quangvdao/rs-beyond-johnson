@@ -1,0 +1,3 @@
+input metadata: kind=Minimal, hash=Poseidon1, publics=68, zisk_vk_words=4, raw_proof_bytes=254032
+output metadata: kind=Minimal, hash=Poseidon1, raw_proof_bytes=242272
+Q51 Minimal Poseidon1 proof verified, saved, reloaded, and verified again
