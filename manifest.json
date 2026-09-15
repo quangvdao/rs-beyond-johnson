@@ -1,7 +1,7 @@
 {
   "algorithm": "sha256",
   "files": {
-    ".gitignore": "dd1f10da578822c9341a22e8cb24342724ec8a3b1a18c09c94e620daa5342508",
+    ".gitignore": "113198d2e11d7ecdade6ca39f1758ae9259304267184ee1005bf740a61fc95ff",
     "CALCULATIONS.md": "4b58aa47a75f3dcdfc50d34f166d1b60d411d36e7c21e8f1e6b9bc65895592de",
     "LICENSE-APACHE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSE-CC-BY-4.0": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
