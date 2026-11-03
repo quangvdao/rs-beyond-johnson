@@ -93,16 +93,20 @@ The paper's source is maintained privately.
 
 ## Formalization
 
-The paper's mathematical-source pin is
-[`a5aa267` in ArkLib](https://github.com/quangvdao/ArkLib/tree/a5aa2677fee4e3a79d6bb05136631cce4a08587d).
-Its separate decoder-source pin is
+The paper's current mathematical-source pin is
+[`6aa8b6f` in ArkLib](https://github.com/quangvdao/ArkLib/tree/6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7).
+The PDF in this repository is an earlier version that cites
+[`a5aa267`](https://github.com/quangvdao/ArkLib/tree/a5aa2677fee4e3a79d6bb05136631cce4a08587d);
+its excerpts remain at commit
+[`fd6d84e`](https://github.com/quangvdao/rs-beyond-johnson/tree/fd6d84edd50dcca7c0b3f388e0b4824d9daa082d/scripts/lean-statements)
+of this repository. The separate decoder-source pin is
 [`ffab000` in ArkLib](https://github.com/quangvdao/ArkLib/tree/ffab000e71c5b19e8a19bebadcc0050eac1366e3).
 These pins identify the paper's source correspondence. The excerpt checker
 does not certify complete decoder development or a runtime cost model. Consult the paper's formalization section and the pinned
 ArkLib documentation for scope.
 
 The [literal statement bundle](scripts/lean-statements/README.md) includes
-24 excerpts and a [source manifest](scripts/lean-statements/sources.json)
+25 excerpts and a [source manifest](scripts/lean-statements/sources.json)
 recording each declaration's file and immutable revision. Its checker compares
 the excerpts against those Git objects; it does not rebuild the formalization.
 

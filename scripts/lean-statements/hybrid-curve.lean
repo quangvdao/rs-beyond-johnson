@@ -1,16 +1,15 @@
-theorem exists_exceptional_exact_powerAgreement_best
+theorem exists_exceptional_exactPowerAgreement_best
     {F E : Type u} [Field F] [Field E] [IsAlgClosed E]
-    {p : LineProfile} (hp : p.CurveVerification)
-    (split : ℕ)
+    {p : LineProfile} (hp : p.CurveVerification) (split : ℕ)
     (hsplit : p.k ≤ split ∧ split ≤ p.agreement ∧ p.agreement ≤ p.n)
-    (hk : 2 ≤ p.k) (hell : 0 < p.batchingDegree)
+    (hell : 0 < p.batchingDegree)
     (hM : 1 ≤ p.firstDerivativeCap)
     (hMB : p.firstDerivativeCap ≤ p.totalJetCap)
     (domain : Fin p.n ↪ F)
     (values : Fin (p.batchingDegree + 1) → Fin p.n → F)
     (iota : F →+* E)
     (hchar : ringChar F = 0 ∨
-      max p.D p.firstDerivativeCap < ringChar F) :
+      max p.candidateDegree p.firstDerivativeCap < ringChar F) :
     ∃ exceptional : Finset F,
       (exceptional.card : ℝ) ≤ bestCurveEnvelope p split ∧
       ∀ z ∉ exceptional, ∀ P : F[X], P.degree < p.k →

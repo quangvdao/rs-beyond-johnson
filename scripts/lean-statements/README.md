@@ -1,14 +1,14 @@
 # Literal Lean statements
 
 This bundle supplies the statement excerpts referenced by the main paper's
-Lean appendix. The 24 `.lean` files contain declaration statements, with proof
+Lean appendix. The 25 `.lean` files contain declaration statements, with proof
 bodies omitted. They are excerpts for reading, not standalone compilable modules.
 
 [sources.json](sources.json) records each excerpt's source path, declaration
 names, and immutable revision in [ArkLib](https://github.com/quangvdao/ArkLib).
 The mathematical and decoder sources have separate pins:
 
-- Mathematics: `a5aa2677fee4e3a79d6bb05136631cce4a08587d`.
+- Mathematics: `6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7`.
 - Simplified decoder: `ffab000e71c5b19e8a19bebadcc0050eac1366e3`.
 
 ## Check correspondence
@@ -22,7 +22,7 @@ python3 scripts/sync_lean_statements.py --math-repo /path/to/ArkLib-math --decod
 ```
 
 One checkout may serve both arguments if it contains both commits. Success
-prints `Checked 24 literal Lean excerpts.` The checker reads the pinned Git
+prints `Checked 25 literal Lean excerpts.` The checker reads the pinned Git
 objects, compares every excerpt, and verifies the source manifest. It omits
 source comments and proof bodies but preserves statement tokens. A missing
 commit, missing declaration, or mismatched excerpt makes the command fail.

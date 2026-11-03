@@ -1,13 +1,13 @@
 {
   "first-order-finite-slack": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/Branchwise.lean",
     "declarations": [
       "firstOrderBranch_finiteLength_finiteSlack_bounds"
     ]
   },
   "first-order-rate": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/Branchwise.lean",
     "declarations": [
       "firstOrderBranch_finiteLength_rate_bounds",
@@ -15,135 +15,141 @@
     ]
   },
   "johnson-list": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
-    "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Johnson/WeightedCertificate.lean",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/PairwiseJohnson.lean",
     "declarations": [
-      "closePolynomialSet_finite_and_ncard_le_johnsonPairwise"
+      "closePolynomialSet_finite_and_ncard_le_pairwiseJohnson"
     ]
   },
   "johnson-mca": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Johnson/Agreement.lean",
     "declarations": [
-      "exists_exceptional_johnson_lineMCA_allChar",
-      "johnson_lineMCA_probability"
+      "exists_johnson_line_exactCorrelatedPair"
+    ]
+  },
+  "johnson-mca-error": {
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Johnson/Probability.lean",
+    "declarations": [
+      "mcaError_affineLine_johnson_le"
     ]
   },
   "fixed-order-list": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity/RatePartition.lean",
     "declarations": [
       "exists_ratePartition_list_bound"
     ]
   },
   "fixed-order-mca": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity/RatePartition.lean",
     "declarations": [
-      "exists_ratePartition_lineMCA_parameters"
+      "exists_ratePartition_line_exactCorrelatedPair_parameters"
     ]
   },
   "list-property": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
-    "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity.lean",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity/ExactLists.lean",
     "declarations": [
       "HasCapacityLists"
     ]
   },
   "list-theorem": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
-    "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity.lean",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity/ExactLists.lean",
     "declarations": [
       "exists_rateCapacity_list"
     ]
   },
   "capacity-list": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/ListDecodability/Capacity/MathematicalUniformRate.lean",
     "declarations": [
-      "uniform_capacity_list_bound_300"
+      "mathematicalUniform_capacity_list_bound"
     ]
   },
   "capacity-mca": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity/MathematicalUniformRate.lean",
     "declarations": [
-      "exists_mathematicalUniformRatePartition_lineMCA"
+      "exists_mathematicalUniformRatePartition_line_exactCorrelatedPair"
     ]
   },
   "sharp-mca-property": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity.lean",
     "declarations": [
-      "HasSharpCapacityLineAgreement"
+      "HasCapacityLineAgreement"
     ]
   },
   "sharp-mca-theorem": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity.lean",
     "declarations": [
-      "exists_sharpCapacity_lineAgreement"
+      "exists_capacity_lineAgreement"
     ]
   },
   "sharp-mca-error": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity.lean",
     "declarations": [
-      "exists_sharpCapacity_mcaError"
+      "exists_capacity_mcaError"
     ]
   },
   "sharp-affine-theorem": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity.lean",
     "declarations": [
-      "exists_sharpCapacity_affineAgreement"
+      "exists_capacity_affineAgreement"
     ]
   },
   "sharp-power-theorem": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/Capacity.lean",
     "declarations": [
-      "exists_sharpCapacity_powerBatchingAgreement"
+      "exists_capacity_powerBatchingAgreement"
     ]
   },
   "hybrid-curve": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/HybridCurveProfile.lean",
     "declarations": [
-      "exists_exceptional_exact_powerAgreement_best"
+      "exists_exceptional_exactPowerAgreement_best"
     ]
   },
   "hybrid-curve-optimized": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/HybridCurveProfile.lean",
     "declarations": [
-      "exists_exceptional_exact_powerAgreement_best_optimized"
+      "exists_exceptional_exactPowerAgreement_bestOptimized"
     ]
   },
   "squarefree-curve": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
-    "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/Squarefree/Sharp.lean",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/MutualCorrelatedAgreement/FirstOrder/Squarefree/SharpCurve.lean",
     "declarations": [
-      "exists_exceptional_retainedSquarefreeCurveMCA_sharp_at",
-      "exists_exceptional_retainedSquarefreeCurveMCA_sharp_optimized"
+      "exists_exceptional_retainedSquarefreeCurveAgreement_sharpAt",
+      "exists_exceptional_retainedSquarefreeCurveAgreement_sharpOptimized"
     ]
   },
   "interleaved-power": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
-    "source": "ArkLib/Data/CodingTheory/ReedSolomon/Interleaved/PowerAgreementArbitrary.lean",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
+    "source": "ArkLib/Data/CodingTheory/ReedSolomon/Interleaved/PowerAgreement.lean",
     "declarations": [
-      "uniformExactInterleavedPowerAgreement_of_scalar_arbitrary"
+      "uniformExactInterleavedPowerAgreement_of_scalar"
     ]
   },
   "tensor-fold": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ProximityGenerator/BinaryTensorFoldAgreement.lean",
     "declarations": [
       "tensorFoldBad_card_le"
     ]
   },
   "interleaved-tensor-fold": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/Interleaved/TensorFoldAgreement.lean",
     "declarations": [
       "fullSetLevelWitness_interleaved_of_exactAgreement",
@@ -158,14 +164,14 @@
     ]
   },
   "agreement-count": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/Basic/Distance.lean",
     "declarations": [
       "agree"
     ]
   },
   "agreement-sets": {
-    "revision": "a5aa2677fee4e3a79d6bb05136631cce4a08587d",
+    "revision": "6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7",
     "source": "ArkLib/Data/CodingTheory/ReedSolomon/Agreement.lean",
     "declarations": [
       "polynomialAgreementSet",

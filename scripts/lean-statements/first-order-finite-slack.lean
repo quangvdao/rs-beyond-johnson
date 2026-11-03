@@ -10,12 +10,12 @@ theorem firstOrderBranch_finiteLength_finiteSlack_bounds
     (∀ received : Fin n → F,
       (closePolynomialSet domain received k A).Finite ∧
         ((closePolynomialSet domain received k A).ncard : ℝ) ≤
-          7 * firstOrderBranchFiniteLengthMCAConstant rho ^ 3 * n /
+          7 * firstOrderBranchFiniteLengthMcaConstant rho ^ 3 * n /
             finiteLengthSlack eta n ^ 2) ∧
       ∀ f g : Fin n → F,
         ∃ exceptional : Finset F,
           (exceptional.card : ℝ) ≤
-            140 * firstOrderBranchFiniteLengthMCAConstant rho ^ 6 * n ^ 2 /
+            140 * firstOrderBranchFiniteLengthMcaConstant rho ^ 6 * n ^ 2 /
               finiteLengthSlack eta n ^ 4 ∧
           ∀ z ∉ exceptional,
             ∀ P : F[X], P.degree < k →

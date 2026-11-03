@@ -1,6 +1,3 @@
-theorem tensorFoldBad_card_le [Fintype F] [DecidableEq A]
-    {C : ModuleCode ι F A} {agreement exceptionalCount h : ℕ}
-    (hlevel : FullSetLevelWitness C agreement exceptionalCount)
+theorem tensorFoldBad_card_le [Fintype F] (hlevel : FullSetLevelWitness C a e) {h : ℕ}
     (u : (Fin h → Bool) → ι → A) :
-    (tensorFoldBad hlevel u).card ≤
-      h * exceptionalCount * Fintype.card F ^ (h - 1)
+    (tensorFoldBad hlevel u).card ≤ h * e * Fintype.card F ^ (h - 1)

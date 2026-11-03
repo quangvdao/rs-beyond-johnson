@@ -1,9 +1,4 @@
-theorem uniformExactInterleavedPowerAgreement_of_scalar_arbitrary
-    [DecidableEq F]
-    {n k agreement exceptionalCount width ℓ : ℕ}
-    (domain : Fin n ↪ F)
-    (hscalar : ∀ values : Fin (ℓ + 1) → Fin n → F,
-      UniformExactPowerAgreement domain values k agreement exceptionalCount)
-    (hwidth : 0 < width) (hkAgreement : k ≤ agreement)
-    (values : Fin (ℓ + 1) → Fin n → Fin width → F) :
-    UniformExactInterleavedPowerAgreement domain values k agreement exceptionalCount
+theorem uniformExactInterleavedPowerAgreement_of_scalar (domain : ι ↪ F) {k L e : ℕ}
+    (hscalar : ∀ w : Fin (ℓ + 1) → ι → F, UniformExactPowerAgreement domain w k L e)
+    (hk : k ≤ L) (values : Fin (ℓ + 1) → ι → κ → F) :
+    UniformExactInterleavedPowerAgreement domain values k L e
