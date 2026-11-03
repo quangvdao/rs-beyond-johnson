@@ -97,7 +97,7 @@ The paper's current mathematical-source pin is
 [`6aa8b6f` in ArkLib](https://github.com/quangvdao/ArkLib/tree/6aa8b6fe8059cecc0e53607ca811a933a0f8e0b7).
 The PDF in this repository is an earlier version that cites
 [`a5aa267`](https://github.com/quangvdao/ArkLib/tree/a5aa2677fee4e3a79d6bb05136631cce4a08587d);
-its excerpts remain at commit
+the excerpts for that pin remain at commit
 [`fd6d84e`](https://github.com/quangvdao/rs-beyond-johnson/tree/fd6d84edd50dcca7c0b3f388e0b4824d9daa082d/scripts/lean-statements)
 of this repository. The separate decoder-source pin is
 [`ffab000` in ArkLib](https://github.com/quangvdao/ArkLib/tree/ffab000e71c5b19e8a19bebadcc0050eac1366e3).
